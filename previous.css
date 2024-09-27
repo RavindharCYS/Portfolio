@@ -1,0 +1,354 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: auto; /* Enable scrolling */
+    overflow-x: hidden; /* Allow vertical scrolling but prevent horizontal overflow */
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navigation buttons - consistent style across all pages */
+.button-container {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(173, 172, 172, 0.807);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #333;
+}
+
+/* Styles for courses.html */
+.courses-page {
+    background: url('courses-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#introduction, #courses, #certificates {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-item, .certificate-item {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.course-item:hover, .certificate-item:hover {
+    transform: translateY(-5px);
+}
+
+.course-image, .certificate-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.course-info, .certificate-info {
+    flex: 1;
+}
+
+.course-info h3, .certificate-info h3 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.course-info p, .certificate-info p {
+    color: #34495e;
+    font-size: 0.9em;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    /* Navigation adjustments for smaller screens */
+    .button-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for visibility */
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    /* Main content adjustments for smaller screens */
+    main {
+        width: 90%; /* Reduce width for mobile */
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .course-item,
+    .certificate-item {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center align the items */
+    }
+
+    .course-image,
+    .certificate-image {
+        width: 100%; /* Make the images responsive */
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Other containers like about, contact, resume, and portfolio */
+    .about-container,
+    .contact-page .contact-container,
+    .resume-page .resume-container,
+    .portfolio-page .portfolio-container {
+        width: 90%; /* Reduce width for mobile */
+        margin: 20px auto; /* Adjust margin for better spacing */
+    }
+}
+
+/* Allow scrolling on all pages */
+body.courses-page,
+body.contact-page,
+body.resume-page,
+body.portfolio-page,
+html.courses-page,
+html.contact-page,
+html.resume-page,
+html.portfolio-page {
+    height: auto; /* Ensure scrolling is enabled */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Styles for index.html (home/about page) */
+.container {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.profile {
+    background: rgba(255, 255, 255, 0.0);
+    padding: 20px;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.title, .info {
+    color: #fff;
+}
+
+.title {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.about-container {
+    position: absolute;
+    left: 45%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.about-container h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-description {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 1.5;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Responsive styles for about and profile */
+@media (max-width: 768px) {
+    .container,
+    .about-container {
+        position: static;
+        transform: none;
+        margin-top: 60px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Styles for contact.html */
+body.contact-page, 
+html.contact-page {
+    height: auto;
+    overflow: auto;
+    background: url('contact-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-page .contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-page .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-page label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.contact-page input, 
+.contact-page textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-page textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-page button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page button:hover {
+    background-color: #2980b9;
+}
+
+.contact-page .contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-page .contact-info h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-page .contact-info p {
+    margin: 5px 0;
+}
+
+.contact-page .contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-page .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for portfolio.html */
+body.portfolio-page, 
+html.portfolio-page {
+    background: url('portfolio-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: auto;
+    overflow: auto;
+}
+
+.portfolio-page .portfolio-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
