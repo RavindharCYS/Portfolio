@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravindhar V - Cyber Security Engineer</title>
-    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#64ffda">
+    <meta name="msapplication-TileColor" content="#0a192f">
+    <meta name="theme-color" content="#0a192f">
+
     <!-- Meta tags for SEO -->
     <meta name="description" content="Ravindhar V - Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions">
     <meta name="keywords" content="cyber security, penetration testing, network security, IoT solutions, security engineer">
@@ -1800,5 +1808,50 @@
                 }
             });
         </script>
+        <script>
+            // Add this script in your HTML file or in a separate .js file
+            function generateFavicon() {
+                // Create a canvas
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                
+                // Set canvas size for favicon (32x32 is standard)
+                canvas.width = 32;
+                canvas.height = 32;
+                
+                // Create an image element
+                const img = new Image();
+                img.src = 'assets/Profile.JPG'; // Your profile image path
+                
+                img.onload = function() {
+                    // Draw the image as a circle
+                    ctx.beginPath();
+                    ctx.arc(16, 16, 16, 0, Math.PI * 2, true);
+                    ctx.closePath();
+                    ctx.clip();
+                    
+                    // Draw the image
+                    ctx.drawImage(img, 0, 0, 32, 32);
+                    
+                    // Create favicon link element
+                    const link = document.createElement('link');
+                    link.type = 'image/x-icon';
+                    link.rel = 'shortcut icon';
+                    link.href = canvas.toDataURL("image/x-icon");
+                    
+                    // Remove existing favicon
+                    const existingFavicon = document.querySelector('link[rel="shortcut icon"]');
+                    if (existingFavicon) {
+                        document.head.removeChild(existingFavicon);
+                    }
+                    
+                    // Add new favicon
+                    document.head.appendChild(link);
+                };
+            }
+            
+            // Call the function when page loads
+            window.addEventListener('load', generateFavicon);
+            </script>
     </body>
     </html>
