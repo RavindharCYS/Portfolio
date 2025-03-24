@@ -1612,20 +1612,20 @@
                 <form class="contact-form" data-aos="fade-left" id="contactForm">
                     <div class="form-group">
                         <label class="form-label">Name</label>
-                        <input type="text" class="form-input" required>
+                        <input type="text" class="form-input" name="user_name" id="user_name" required>
                     </div>
                     
                     <div class="form-group">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-input" required>
+                        <input type="email" class="form-input" name="user_email" id="user_email" required>
                     </div>
                     
                     <div class="form-group">
                         <label class="form-label">Message</label>
-                        <textarea class="form-textarea" required></textarea>
+                        <textarea class="form-textarea" name="message" id="message" required></textarea>
                     </div>
                     
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
                 </form>
             </div>
         </section>
@@ -1654,204 +1654,218 @@
         </footer>
     
         <!-- Scripts -->
-        <script>
-            // Configuration object for resume download
-            const resumeConfig = {
-                filePath: 'assets/resume/Ravindhar_V_Resume.pdf', // Path to your resume
-                fileName: 'Ravindhar_V_Resume.pdf' // Name for downloaded file
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- Main Script Module -->
+<script>
+// ===============================
+// Configuration Objects
+// ===============================
+const config = {
+    resume: {
+        filePath: 'assets/resume/Ravindhar_V_Resume.pdf',
+        fileName: 'Ravindhar_V_Resume.pdf'
+    },
+    emailjs: {
+        publicKey: 'Ny9Ko_FtQ9HSmaIv0', // Replace with your EmailJS public key
+        serviceId: 'service_s2rjpbq', // Replace with your EmailJS service ID
+        templateId: 'template_o2s64pl' // Replace with your EmailJS template ID
+    },
+    animation: {
+        duration: 1000,
+        once: true,
+        offset: 100
+    }
+};
+
+// ===============================
+// Resume Download Module
+// ===============================
+const ResumeModule = {
+    async handleDownload(button) {
+        this.setLoadingState(button, true);
+        try {
+            await this.downloadFile();
+            this.trackDownload();
+        } catch (error) {
+            this.handleError(error);
+        } finally {
+            this.setLoadingState(button, false);
+        }
+    },
+
+    setLoadingState(button, isLoading) {
+        button.classList.toggle('loading', isLoading);
+        button.textContent = isLoading ? 'Downloading...' : 'Download CV';
+    },
+
+    async downloadFile() {
+        const response = await fetch(config.resume.filePath);
+        if (!response.ok) throw new Error('Failed to fetch resume');
+
+        const blob = await response.blob();
+        if (blob.type !== 'application/pdf') throw new Error('Invalid file format');
+
+        const downloadUrl = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+        link.download = config.resume.fileName;
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(downloadUrl);
+    },
+
+    handleError(error) {
+        console.error('Download error:', error);
+        alert('Sorry, there was a problem downloading the resume. Please try again later.');
+    },
+
+    trackDownload() {
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'download', {
+                'event_category': 'Resume',
+                'event_label': 'CV Download'
+            });
+        }
+    }
+};
+
+// ===============================
+// Contact Form Module
+// ===============================
+const ContactModule = {
+    init() {
+        emailjs.init(config.emailjs.publicKey);
+        this.bindEvents();
+    },
+
+    bindEvents() {
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', (e) => this.handleSubmit(e));
+        }
+    },
+
+    async handleSubmit(e) {
+        e.preventDefault();
+        const form = e.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        this.setLoadingState(submitBtn, true);
+
+        try {
+            const templateParams = {
+                from_name: form.querySelector('input[name="user_name"]').value,
+                from_email: form.querySelector('input[name="user_email"]').value,
+                message: form.querySelector('textarea[name="message"]').value
             };
-        
-            /**
-             * Handles the resume download process
-             * @param {HTMLElement} button - The download button element
-             */
-            async function handleResumeDownload(button) {
-                // Show loading state
-                setLoadingState(button, true);
-        
-                try {
-                    // Download the resume
-                    await downloadResume();
-                    
-                    // Optional: Track successful download
-                    trackDownload();
-                } catch (error) {
-                    // Handle any errors
-                    handleDownloadError(error);
-                } finally {
-                    // Remove loading state
-                    setLoadingState(button, false);
-                }
+
+            await this.sendEmail(templateParams);
+            this.handleSuccess(form);
+        } catch (error) {
+            this.handleError(error);
+        } finally {
+            this.setLoadingState(submitBtn, false);
+        }
+    },
+
+    setLoadingState(button, isLoading) {
+        button.disabled = isLoading;
+        button.textContent = isLoading ? 'Sending...' : 'Send Message';
+    },
+
+    async sendEmail(templateParams) {
+        return emailjs.send(
+            config.emailjs.serviceId,
+            config.emailjs.templateId,
+            templateParams
+        );
+    },
+
+    handleSuccess(form) {
+        alert('Thank you for your message! I will get back to you soon.');
+        form.reset();
+    },
+
+    handleError(error) {
+        console.error('Email send failed:', error);
+        alert('Sorry, there was an error sending your message. Please try again later.');
+    }
+};
+
+// ===============================
+// Navigation Module
+// ===============================
+const NavigationModule = {
+    init() {
+        this.bindScrollEvents();
+        this.bindSmoothScroll();
+    },
+
+    bindScrollEvents() {
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.nav-container');
+            if (nav) {
+                nav.style.background = window.scrollY > 100 
+                    ? 'rgba(10, 25, 47, 0.95)' 
+                    : 'transparent';
             }
-        
-            /**
-             * Sets the loading state of the button
-             * @param {HTMLElement} button - The button element
-             * @param {boolean} isLoading - Whether to show loading state
-             */
-            function setLoadingState(button, isLoading) {
-                if (isLoading) {
-                    button.classList.add('loading');
-                    button.textContent = 'Downloading...';
-                } else {
-                    button.classList.remove('loading');
-                    button.textContent = 'Download CV';
-                }
-            }
-        
-            /**
-             * Handles the actual resume download
-             * @returns {Promise} - Download promise
-             */
-            async function downloadResume() {
-                // Fetch the PDF file
-                const response = await fetch(resumeConfig.filePath);
-                
-                // Check if fetch was successful
-                if (!response.ok) {
-                    throw new Error('Failed to fetch resume');
-                }
-        
-                // Convert response to blob
-                const blob = await response.blob();
-        
-                // Verify file type
-                if (blob.type !== 'application/pdf') {
-                    throw new Error('Invalid file format');
-                }
-        
-                // Create download link
-                const downloadUrl = window.URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                link.href = downloadUrl;
-                link.download = resumeConfig.fileName;
-        
-                // Trigger download
-                document.body.appendChild(link);
-                link.click();
-        
-                // Clean up
-                document.body.removeChild(link);
-                window.URL.revokeObjectURL(downloadUrl);
-            }
-        
-            /**
-             * Handles download errors
-             * @param {Error} error - The error object
-             */
-            function handleDownloadError(error) {
-                console.error('Download error:', error);
-                
-                // Show user-friendly error message
-                alert('Sorry, there was a problem downloading the resume. Please try again later.');
-            }
-        
-            /**
-             * Tracks successful downloads (Optional - for analytics)
-             */
-            function trackDownload() {
-                // If you're using Google Analytics
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'download', {
-                        'event_category': 'Resume',
-                        'event_label': 'CV Download'
-                    });
-                }
-            }
-        
-            /**
-             * Alternative simple download function if you don't need loading states
-             */
-            function simpleDownload() {
-                const link = document.createElement('a');
-                link.href = resumeConfig.filePath;
-                link.download = resumeConfig.fileName;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-        </script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            // Initialize AOS (Animate On Scroll)
-            AOS.init({
-                duration: 1000,
-                once: true,
-                offset: 100
-            });
-    
-            // Form submission
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
+        });
+    },
+
+    bindSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
                 e.preventDefault();
-                // Add your form submission logic here
-                alert('Thank you for your message! I will get back to you soon.');
-                this.reset();
-            });
-    
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-    
-            // Navigation background change on scroll
-            window.addEventListener('scroll', function() {
-                const nav = document.querySelector('.nav-container');
-                if (window.scrollY > 100) {
-                    nav.style.background = 'rgba(10, 25, 47, 0.95)';
-                } else {
-                    nav.style.background = 'transparent';
+                const element = document.querySelector(anchor.getAttribute('href'));
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
                 }
             });
-        </script>
-        <script>
-            // Add this script in your HTML file or in a separate .js file
-            function generateFavicon() {
-                // Create a canvas
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                
-                // Set canvas size for favicon (32x32 is standard)
-                canvas.width = 32;
-                canvas.height = 32;
-                
-                // Create an image element
-                const img = new Image();
-                img.src = 'assets/Profile.JPG'; // Your profile image path
-                
-                img.onload = function() {
-                    // Draw the image as a circle
-                    ctx.beginPath();
-                    ctx.arc(16, 16, 16, 0, Math.PI * 2, true);
-                    ctx.closePath();
-                    ctx.clip();
-                    
-                    // Draw the image
-                    ctx.drawImage(img, 0, 0, 32, 32);
-                    
-                    // Create favicon link element
-                    const link = document.createElement('link');
-                    link.type = 'image/x-icon';
-                    link.rel = 'shortcut icon';
-                    link.href = canvas.toDataURL("image/x-icon");
-                    
-                    // Remove existing favicon
-                    const existingFavicon = document.querySelector('link[rel="shortcut icon"]');
-                    if (existingFavicon) {
-                        document.head.removeChild(existingFavicon);
-                    }
-                    
-                    // Add new favicon
-                    document.head.appendChild(link);
-                };
-            }
-            
-            // Call the function when page loads
-            window.addEventListener('load', generateFavicon);
-            </script>
+        });
+    }
+};
+
+// ===============================
+// Animation Module
+// ===============================
+const AnimationModule = {
+    init() {
+        AOS.init(config.animation);
+    }
+};
+
+// ===============================
+// Initialize All Modules
+// ===============================
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize all modules
+    ContactModule.init();
+    NavigationModule.init();
+    AnimationModule.init();
+
+    // Bind resume download button
+    const downloadBtn = document.querySelector('.download-btn');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            ResumeModule.handleDownload(downloadBtn);
+        });
+    }
+});
+
+// ===============================
+// Export modules if needed
+// ===============================
+window.Portfolio = {
+    ResumeModule,
+    ContactModule,
+    NavigationModule,
+    AnimationModule
+};
+</script>
     </body>
     </html>
