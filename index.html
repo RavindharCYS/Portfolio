@@ -550,8 +550,7 @@
         </div>
     </div>
 </section>
-    
-        <!-- Experience Section -->
+
         <section id="experience" class="experience-section" data-aos="fade-up">
             <style>
                 /* Experience Section Styles */
@@ -559,13 +558,13 @@
                     padding: 100px 10%;
                     position: relative;
                 }
-    
+        
                 .experience-timeline {
                     position: relative;
                     max-width: 1200px;
                     margin: 0 auto;
                 }
-    
+        
                 .timeline-item {
                     position: relative;
                     padding: 30px;
@@ -575,11 +574,11 @@
                     border: 1px solid rgba(100, 255, 218, 0.1);
                     transition: transform 0.3s ease;
                 }
-    
+        
                 .timeline-item:hover {
                     transform: translateX(10px);
                 }
-    
+        
                 .timeline-item::before {
                     content: "";
                     position: absolute;
@@ -591,41 +590,41 @@
                     border-radius: 50%;
                     transform: translateY(-50%);
                 }
-    
+        
                 .experience-title {
                     font-size: 24px;
                     color: var(--text-primary);
                     margin-bottom: 10px;
                 }
-    
+        
                 .experience-company {
                     color: var(--secondary-color);
                     font-size: 18px;
                     margin-bottom: 10px;
                 }
-    
+        
                 .experience-date {
                     color: var(--text-secondary);
                     font-size: 14px;
                     margin-bottom: 15px;
                 }
-    
+        
                 .experience-description {
                     color: var(--text-secondary);
                     font-size: 16px;
                     line-height: 1.6;
                 }
-    
+        
                 .experience-description ul {
                     margin-left: 20px;
                     margin-top: 10px;
                 }
-    
+        
                 .experience-description li {
                     margin-bottom: 5px;
                 }
             </style>
-    
+        
             <h2 class="section-title">Experience</h2>
             <div class="experience-timeline">
                 <div class="timeline-item" data-aos="fade-left">
@@ -643,7 +642,7 @@
                         </ul>
                     </div>
                 </div>
-    
+        
                 <div class="timeline-item" data-aos="fade-left">
                     <h3 class="experience-title">Web Design Intern</h3>
                     <p class="experience-company">Asia University, Taiwan</p>
@@ -659,9 +658,352 @@
                     </div>
                 </div>
             </div>
+        
+            <!-- Certifications Section -->
+            <h3 class="category-title" style="margin-top: 50px;">Professional Certifications</h3>
+            <style>
+                .certifications-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 25px;
+                    margin-top: 30px;
+                }
+                
+                .certification-card {
+                    background: rgba(100, 255, 218, 0.05);
+                    border-radius: 10px;
+                    padding: 25px;
+                    border: 1px solid rgba(100, 255, 218, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .certification-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+                }
+                
+                .certification-header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+                }
+                
+                .certification-logo {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 10%;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                    overflow: hidden;
+                }
+                
+                .certification-logo img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+                
+                .certification-title {
+                    color: var(--text-primary);
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                
+                .certification-issuer {
+                    color: var(--secondary-color);
+                    font-size: 16px;
+                }
+                
+                .certification-date {
+                    color: var(--text-secondary);
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+                
+                .certification-description {
+                    color: var(--text-secondary);
+                    font-size: 15px;
+                    line-height: 1.5;
+                    margin-top: 10px;
+                }
+                
+                .credential-id {
+                    font-size: 13px;
+                    color: var(--text-secondary);
+                    margin-top: 10px;
+                    font-style: italic;
+                }
+                
+                .certification-skills {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    margin-top: 15px;
+                }
+                
+                .certification-skill {
+                    background: rgba(100, 255, 218, 0.1);
+                    color: var(--secondary-color);
+                    padding: 4px 10px;
+                    border-radius: 12px;
+                    font-size: 12px;
+                }
+                
+                /* View Certificate Button Styles */
+                .view-certificate {
+                    display: inline-block;
+                    margin-top: 15px;
+                    padding: 8px 15px;
+                    background: transparent;
+                    border: 1px solid var(--secondary-color);
+                    border-radius: 5px;
+                    color: var(--secondary-color);
+                    font-size: 14px;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                }
+                
+                .view-certificate:hover {
+                    background: rgba(100, 255, 218, 0.1);
+                    transform: translateY(-2px);
+                }
+                
+                .view-certificate i {
+                    margin-right: 5px;
+                }
+            </style>
+        
+            <div class="certifications-grid">
+                <!-- Cisco Certified Ethical Hacker -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-header">
+                        <div class="certification-logo">
+                            <img src="assets/logos/Cisco.png" alt="Cisco logo">
+                        </div>
+                        <div>
+                            <h4 class="certification-title">Ethical Hacker</h4>
+                            <p class="certification-issuer">Cisco</p>
+                        </div>
+                    </div>
+                    <p class="certification-date">Issued Apr 2025</p>
+                    <p class="certification-description">
+                        The certification validated expertise in identifying system vulnerabilities, exploiting them ethically, and providing actionable remediation. Covered areas include footprinting, vulnerability analysis, system hacking, malware threats, and web application security.
+                    </p>
+                    <div class="certification-skills">
+                        <span class="certification-skill">Ethical Hacking</span>
+                        <span class="certification-skill">Pentest Assessment</span>
+                        <span class="certification-skill">Vulnerability Scanning</span>
+                        <span class="certification-skill">Social Engineering Attacks</span>
+                        <span class="certification-skill">Wired and Wireless Networks</span>
+                        <span class="certification-skill">Application-Based Vulnerabilities</span>
+                        <span class="certification-skill">Cloud, Mobile, and IoT Security</span>
+                        <span class="certification-skill">Post-Exploitation</span>
+                        <span class="certification-skill">Code Analysis</span>
+                        <span class="certification-skill">Reporting and Communication</span>
+                    </div>
+                    <a href="assets/Certifications/Cisco Certified Ethical Hacker.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
+                </div>
+        
+                <!-- NIIT Certified Cybersecurity Professional -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-header">
+                        <div class="certification-logo">
+                            <img src="assets/logos/NIIT.png" alt="NIIT Limited logo">
+                        </div>
+                        <div>
+                            <h4 class="certification-title">Certified Cybersecurity Professional</h4>
+                            <p class="certification-issuer">NIIT</p>
+                        </div>
+                    </div>
+                    <p class="certification-date">Issued Feb 2025</p>
+                    <p class="certification-description">
+                        Gained advanced skills in Linux Administration, Python Programming, Network Security, Cloud Computing, Ethical Hacking, and Vulnerability Assessment and Penetration Testing (VAPT).
+                    </p>
+                    <div class="certification-skills">
+                        <span class="certification-skill">Linux System Administration Essentials</span>
+                        <span class="certification-skill">Python</span>
+                        <span class="certification-skill">Logical & Physical Networks & Internetworking with TCP/IP</span>
+                        <span class="certification-skill">Advanced Linux Admin</span>
+                        <span class="certification-skill">Cloud Computing</span>
+                        <span class="certification-skill">Information Security Systems</span>
+                        <span class="certification-skill">Ethical Hacking</span>
+                        <span class="certification-skill">Exploitation of InfoSystem</span>
+                        <span class="certification-skill">Security Operations of InfoSystems</span>
+                        <span class="certification-skill">Realtime Environment Practices</span>
+                    </div>
+                    <a href="assets/Certifications/RAVINDHAR V.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
+                </div>
+        
+                <!-- Google Cyber Security Professional -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-header">
+                        <div class="certification-logo">
+                            <img src="assets/logos/Google.png" alt="Google logo">
+                        </div>
+                        <div>
+                            <h4 class="certification-title">Google Cyber Security Professional</h4>
+                            <p class="certification-issuer">Google</p>
+                        </div>
+                    </div>
+                    <p class="certification-date">Issued Jan 2023</p>
+                    <p class="certification-description">
+                        Completed the Google Cybersecurity Professional Certificate, gaining skills in risk management, network security, threat detection, and incident response.
+                    </p>
+                    <div class="certification-skills">
+                        <span class="certification-skill">Foundations of Cybersecurity</span>
+                        <span class="certification-skill">Risk Management</span>
+                        <span class="certification-skill">Network Security</span>
+                        <span class="certification-skill">Linux Command Line</span>
+                        <span class="certification-skill">SQL</span>
+                        <span class="certification-skill">Security Information and Event Management</span>
+                        <span class="certification-skill">Incident Detection and Response</span>
+                        <span class="certification-skill">Threat Intelligence</span>
+                        <span class="certification-skill">Automating Security Tasks</span>
+                        <span class="certification-skill">Professional Cybersecurity Capstone</span>
+
+                    </div>
+                    <a href="assets/Certifications/Google Cyber Security.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
+                </div>
+        
+                <!-- Java Business Application -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-header">
+                        <div class="certification-logo">
+                            <img src="assets/logos/Java.png" alt="Spoken Tutorial logo">
+                        </div>
+                        <div>
+                            <h4 class="certification-title">Java Business Application</h4>
+                            <p class="certification-issuer">Spoken Tutorial</p>
+                        </div>
+                    </div>
+                    <p class="certification-date">Issued Dec 2022</p>
+                    <p class="credential-id">Credential ID: 3230347CVG</p>
+                    <p class="certification-description">
+                        Completed the Java Business Application course through Spoken Tutorial by IIT Bombay. Developed core skills in Java programming for building real-world business solutions.
+                    </p>
+                    <div class="certification-skills">
+                        <span class="certification-skill">Object-Oriented Design and Principles</span>
+                        <span class="certification-skill">Java Database Connectivity</span>
+                        <span class="certification-skill">Spring Framework</span>
+                        <span class="certification-skill">Hibernate ORM</span>
+                        <span class="certification-skill">Spring Boot</span>
+                        <span class="certification-skill">Business Logic</span>
+                        <span class="certification-skill">Enterprise Application Architecture</span>
+                        <span class="certification-skill">Exception Handling and Logging</span>
+                        <span class="certification-skill">Real-Time Application Development</span>
+
+                        <span class="certification-skill">Business Applications</span>
+                        <span class="certification-skill">Software Development</span>
+                    </div>
+                    <a href="assets/Certifications/Java.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
+                </div>
+        
+                <!-- Red Hat Certified System Administrator -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-header">
+                        <div class="certification-logo">
+                            <img src="assets/logos/RedHat.png" alt="Red Hat logo">
+                        </div>
+                        <div>
+                            <h4 class="certification-title">Red Hat Certified System Administrator (RHCSA)</h4>
+                            <p class="certification-issuer">Red Hat</p>
+                        </div>
+                    </div>
+                    <p class="certification-date">Issued Nov 2022</p>
+                    <p class="credential-id">Credential ID: 2022/ADV/12358</p>
+                    <p class="certification-description">
+                        Achieved Red Hat Certified System Administrator (RHCSA) certification from Red Hat. Gained hands-on skills in Linux system administration, user management, and networking. Focused on managing servers, configuring storage, and automating tasks using shell scripts.
+
+
+                    </p>
+                    <div class="certification-skills">
+                        <span class="certification-skill">System Architecture</span>
+                        <span class="certification-skill">User & Group Management</span>
+                        <span class="certification-skill">File System & Partitions</span>
+                        <span class="certification-skill">Package Management (YUM/RPM)</span>
+                        <span class="certification-skill">Service & Process Control</span>
+                        <span class="certification-skill">Network & Firewall Setup</span>
+                        <span class="certification-skill">Shell Scripting</span>
+                        <span class="certification-skill">SELinux & Security</span>
+                        <span class="certification-skill">Logging & Troubleshooting</span>
+                        <span class="certification-skill">Hands-on Practice</span>
+
+                    </div>
+                    <a href="assets/Certifications/RedHat.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
+                </div>
+        
+                <!-- UiPath Robot Processing Application -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-header">
+                        <div class="certification-logo">
+                            <img src="assets/logos/UiPath.png" alt="UiPath logo">
+                        </div>
+                        <div>
+                            <h4 class="certification-title">Robot Processing Application</h4>
+                            <p class="certification-issuer">UiPath</p>
+                        </div>
+                    </div>
+                    <p class="certification-date">Issued 2022</p>
+                    <p class="credential-id">Credential ID: S1782134</p>
+                    <p class="certification-description">
+                        Completed training and certification in Robotic Process Automation (RPA) with UiPath. Gained expertise in designing, developing, and deploying automation workflows.
+                    </p>
+                    <div class="certification-skills">
+                        <span class="certification-skill">RPA Concepts & Architecture</span>
+                        <span class="certification-skill">UiPath Studio Essentials</span>
+                        <span class="certification-skill">Selectors & Control Flows</span>
+                        <span class="certification-skill">Data Scraping & Manipulation</span>
+                        <span class="certification-skill">Excel & File Automation</span>
+                        <span class="certification-skill">Email Automation</span>
+                        <span class="certification-skill">PDF & Document Automation</span>
+                        <span class="certification-skill">Orchestrator Basics</span>
+                        <span class="certification-skill">Debugging & Exception Handling</span>
+                        <span class="certification-skill">End-to-End Bot Development</span>
+
+                    </div>
+                    <a href="assets/Certifications/RPA.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
+                </div>
+        
+                <!-- Asia University Web Development -->
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-header">
+                        <div class="certification-logo">
+                            <img src="assets/logos/AsiaUniversity.png" alt="Asia University logo">
+                        </div>
+                        <div>
+                            <h4 class="certification-title">Webpage Development</h4>
+                            <p class="certification-issuer">Asia University (Taiwan)</p>
+                        </div>
+                    </div>
+                    <p class="certification-date">Issued July 2023</p>
+                    <p class="credential-id">Credential ID: 2023001024</p>
+                    <p class="certification-description">
+                        Completed Web Design training at Asia University, Taiwan, focusing on creating responsive and visually appealing websites.
+                    </p>
+                    <div class="certification-skills">
+                        <span class="certification-skill">HTML5 & Semantic Structure</span>
+                        <span class="certification-skill">CSS3 Styling & Layouts</span>
+                        <span class="certification-skill">Responsive Web Design</span>
+                        <span class="certification-skill">JavaScript Basics</span>
+                        <span class="certification-skill">Form Design & Validation</span>
+                        <span class="certification-skill">Web Design Principles</span>
+                        <span class="certification-skill">UI/UX Fundamentals</span>
+                        <span class="certification-skill">Cross-Browser Compatibility</span>
+                        <span class="certification-skill">Website Deployment</span>
+                        <span class="certification-skill">Project-Based Learning</span>
+
+                    </div>
+                    <a href="assets/Certifications/Asia University .pdf" class="view-certificate" target="_blank"><i class="fas fa-award" ></i> View Certificate</a>
+                </div>
+            </div>
         </section>
-            <!-- Skills Section -->
-    <section id="skills" class="skills-section" data-aos="fade-up">
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section" data-aos="fade-up">
         <style>
             /* Skills Section Styles */
             .skills-grid {
