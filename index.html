@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Add class="dark-mode" dynamically via JS -->
 <html lang="en">
     <head>
         <!-- Essential Meta Tags -->
@@ -6,2449 +7,867 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ravindhar V</title>
-        <meta name="description" content="Ravindhar V, Ravindhar Cybersecurity Engineer, Ravindhar V Cybersecurity, Certified Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions. Expert in Python, Kali Linux, and security tools like Metasploit, Burp Suite, and OWASP ZAP.">
-        
+        <meta name="description" content="Ravindhar V | Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions. Explore projects, skills, and experience.">
+    
         <!-- Canonical URL -->
         <link rel="canonical" href="https://ravindharcys.github.io/Portfolio/">
-        
-        <!-- Favicon (Multiple Formats for Cross-Browser Support) -->
-        <link rel="apple-touch-icon" sizes="180x180" href="https://ravindharcys.github.io/Portfolio/assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://ravindharcys.github.io/Portfolio/assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://ravindharcys.github.io/Portfolio/assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="https://ravindharcys.github.io/Portfolio/assets/favicon/site.webmanifest">
-        <link rel="mask-icon" href="https://ravindharcys.github.io/Portfolio/assets/favicon/safari-pinned-tab.svg" color="#64ffda">
-        <link rel="shortcut icon" href="https://ravindharcys.github.io/Portfolio/assets/favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#0a192f">
-        <meta name="msapplication-config" content="https://ravindharcys.github.io/Portfolio/assets/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#0a192f">
-        
+    
+        <!-- Favicon -->
+        <!-- === START: Favicon Files Based on Provided List === -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png"> <!-- Assuming 180x180 -->
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg"> <!-- SVG Favicon -->
+        <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico"> <!-- Fallback ICO (contains 16x16, 32x32 etc.) -->
+        <link rel="manifest" href="./assets/favicon/site.webmanifest">
+        <!-- <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#4f46e5"> --> <!-- Removed as safari-pinned-tab.svg is not listed -->
+        <meta name="msapplication-TileColor" content="#111827">
+        <!-- <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml"> --> <!-- Removed as browserconfig.xml is not listed -->
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111827">
+        <!-- === END: Favicon Files === -->
+    
         <!-- Open Graph / Facebook Meta Tags -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://ravindharcys.github.io/Portfolio/">
-        <meta property="og:title" content="Ravindhar V">
+        <meta property="og:title" content="Ravindhar V - Cyber Security Engineer Portfolio">
         <meta property="og:description" content="Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions with expertise in security tools and frameworks.">
-        <meta property="og:image" content="https://ravindharcys.github.io/Portfolio/assets/images/profile.jpg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        
+        <meta property="og:image" content="https://ravindharcys.github.io/Portfolio/assets/Profile.JPG">
+        <meta property="og:image:width" content="400">
+        <meta property="og:image:height" content="400">
+    
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="https://ravindharcys.github.io/Portfolio/">
-        <meta name="twitter:title" content="Ravindhar V">
-        <meta name="twitter:description" content="Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions with expertise in security tools and frameworks.">
-        <meta name="twitter:image" content="https://ravindharcys.github.io/Portfolio/assets/images/profile.jpg">
-        
-        <!-- Structured Data (JSON-LD) for Rich Results -->
+        <meta name="twitter:title" content="Ravindhar V - Cyber Security Engineer Portfolio">
+        <meta name="twitter:description" content="Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions.">
+        <meta name="twitter:image" content="https://ravindharcys.github.io/Portfolio/assets/Profile.JPG">
+    
+        <!-- Structured Data (JSON-LD) -->
         <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Ravindhar V",
           "url": "https://ravindharcys.github.io/Portfolio/",
-          "image": "https://ravindharcys.github.io/Portfolio/assets/images/profile.jpg",
+          "image": "https://ravindharcys.github.io/Portfolio/assets/Profile.JPG",
           "jobTitle": "Cyber Security Engineer",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "NIIT"
-          },
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Paavai Engineering College"
-          },
-          "description": "Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions",
+          "description": "Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions, seeking challenging opportunities.",
           "sameAs": [
             "https://www.linkedin.com/in/ravindhar-cy",
-            "https://github.com/ravindharcys"
+            "https://github.com/ravindharcys",
+            "mailto:ravindhar.upm@gmail.com"
           ],
-          "knowsAbout": ["Penetration Testing", "Network Security", "IoT Security", "Ethical Hacking", "Cybersecurity", "Malware Detection", "Web Security"]
+          "knowsAbout": ["Penetration Testing", "Network Security", "IoT Security", "Ethical Hacking", "Cybersecurity", "Vulnerability Assessment", "Web Security", "Python", "Linux", "Security Tools", "VAPT", "Cloud Security", "Fortinet"],
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "Paavai Engineering College" },
+          "worksFor": { "@type": "Organization", "name": "NIIT" }
         }
         </script>
-        
-        <!-- Preconnect to External Domains -->
+    
+        <!-- Preconnect & Preload -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://cdnjs.cloudflare.com">
         <link rel="preconnect" href="https://unpkg.com">
-        
-        <!-- Preload Critical Resources -->
-        <link rel="preload" href="https://ravindharcys.github.io/Portfolio/assets/css/style.css" as="style">
-        <link rel="preload" href="https://ravindharcys.github.io/Portfolio/assets/js/main.js" as="script">
-        
-        <!-- CSS Links -->
-        <link rel="stylesheet" href="https://ravindharcys.github.io/Portfolio/assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-        
-        <!-- Additional SEO Keywords -->
-        <meta name="keywords" content="Ravindhar V, Cyber Security Engineer, Penetration Testing, Network Security, IoT Security, Ethical Hacking, VAPT, Security Tools, Metasploit, Burp Suite, OWASP ZAP, Kali Linux, Python Security, Cybersecurity Expert, Security Consultant, Web Application Security, Malware Detection, Machine Learning Security">
-        
-        <!-- Additional Meta Information -->
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+        <!-- Stylesheets -->
+        <link rel="preload" href="styles.css" as="style">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Load Font Awesome asynchronously -->
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+        <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+        <!-- Keywords, Author, etc. -->
+        <meta name="keywords" content="Ravindhar V, Cyber Security Engineer, Penetration Testing, Network Security, IoT Security, Ethical Hacking, VAPT, Security Tools, Metasploit, Burp Suite, OWASP ZAP, Kali Linux, Python Security, Cybersecurity Expert, Security Consultant, Web Application Security, Fortinet, NIIT, Paavai Engineering College">
         <meta name="author" content="Ravindhar V">
         <meta name="robots" content="index, follow">
-        <meta name="language" content="English">
-        <meta name="revisit-after" content="7 days">
-        
+    
         <!-- Mobile App Capability -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="Ravindhar V - Portfolio">
-        
-        <!-- DNS Prefetch for Performance -->
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-        <link rel="dns-prefetch" href="https://unpkg.com">
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        
-        <!-- Google Search Console Verification (Add your verification code) -->
-        <!-- <meta name="google-site-verification" content="your-verification-code"> -->
-        
-        <!-- Bing Webmaster Tools Verification (Add your verification code) -->
-        <!-- <meta name="msvalidate.01" content="your-verification-code"> -->
-
-        <!-- Google tag (gtag.js) -->
+        <meta name="apple-mobile-web-app-title" content="Ravindhar V">
+    
+        <!-- Analytics (Keep your actual ID) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JT74YH29S7"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-JT74YH29S7');
         </script>
-    </head>    
-    <style>
-        /* Base Styles */
-        :root {
-            --primary-color: #0a192f;
-            --secondary-color: #3dffd2;
-            --text-primary: #ccd6f6;
-            --text-secondary: #8892b0;
-            --accent-color: #ff6b6b;
-        }
-        html {
-        scroll-behavior: smooth;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: var(--primary-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        /* Navigation Styles */
-        .nav-container {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(10, 25, 47, 0.95);
-            padding: 20px 0;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--secondary-color);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Hero Section Styles */
-.hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 100px 10%;
-    position: relative;
-    overflow: hidden;
-    align-items: center;
-    gap: 40px;
-}
-
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.hero-image {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.profile-img-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    margin: auto;
-}
-
-.profile-img-container::after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: -15px;
-    bottom: -15px;
-    border: 2px solid var(--secondary-color);
-    border-radius: 20px;
-    z-index: -1;
-    transition: all 0.3s ease;
-}
-
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.profile-img-container:hover .profile-img {
-    transform: translateY(-5px);
-}
-
-.profile-img-container:hover::after {
-    transform: translate(5px, 5px);
-}
-
-.hero-title {
-    font-size: 16px;
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-    font-family: 'Fira Code', monospace;
-    letter-spacing: 0.1em;
-}
-
-.hero-name {
-    font-size: 70px;
-    font-weight: bold;
-    line-height: 1.1;
-    margin-bottom: 10px;
-    background: linear-gradient(45deg, var(--text-primary), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-    font-size: 32px;
-    color: var(--text-secondary);
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.hero-description {
-    font-size: 18px;
-    text-align: justify;
-    color: var(--text-secondary);
-    margin-bottom: 30px;
-    max-width: 540px;
-    line-height: 1.6;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.cta-primary, .cta-secondary, .download-btn {
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.cta-primary {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    border: none;
-}
-
-.cta-secondary, .download-btn {
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
-    background: transparent;
-}
-
-.cta-primary:hover, .cta-secondary:hover, .download-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
-}
-
-.social-links {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.social-links a {
-    color: var(--text-primary);
-    font-size: 22px;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--secondary-color);
-    transform: translateY(-3px);
-}
-
-/* Download Button Loading State */
-.download-btn.loading {
-    pointer-events: none;
-    opacity: 0.8;
-}
-
-.download-btn.loading::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--secondary-color);
-    border-top: 2px solid transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* Scroll Indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--secondary-color);
-    font-size: 24px;
-    animation: bounce 2s infinite;
-    z-index: 2;
-}
-
-/* Animations */
-@keyframes spin {
-    0% { transform: translateY(-50%) rotate(0deg); }
-    100% { transform: translateY(-50%) rotate(360deg); }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .profile-img-container {
-        width: 350px;
-        height: 350px;
-    }
-
-    .hero-name {
-        font-size: 60px;
-    }
-}
-
-@media (max-width: 992px) {
-    .hero {
-        padding: 80px 5%;
-    }
-
-    .profile-img-container {
-        width: 300px;
-        height: 300px;
-    }
-
-    .hero-name {
-        font-size: 50px;
-    }
-
-    .hero-subtitle {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: 120px;
-    }
-
-    .hero-content {
-        padding-right: 0;
-        align-items: center;
-        order: 2;
-    }
-
-    .hero-image {
-        order: 1;
-    }
-
-    .hero-description {
-        text-align: center;
-    }
-
-    .cta-buttons, .social-links {
-        justify-content: center;
-    }
-
-    .profile-img-container {
-        width: 280px;
-        height: 280px;
-    }
-}
-    
-</style>
-</head>
+    </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
     <!-- Navigation -->
-    <nav class="nav-container">
-        <div class="nav-content">
-            <div class="logo">Ravindhar V</div>
-            <div class="nav-links">
+    <nav class="nav-container" id="main-nav">
+        <div class="nav-content container">
+            <a href="#home" class="logo" aria-label="Ravindhar V - Home">Ravindhar V</a>
+            <div class="nav-links" id="main-nav-links">
+                <!-- Links will be scroll-spied by JS -->
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
-                <a href="#freelance">Freelancer</a>
+                <a href="#freelance">Freelance</a>
                 <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle-button" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                    <i class="fas fa-moon"></i> <!-- JS updates icon -->
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav-links">
+                    <i class="fas fa-bars"></i> <!-- JS updates icon -->
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
+        <!-- Particles container -->
         <div id="particles-js"></div>
-        <div class="hero-content" data-aos="fade-right">
-            <p class="hero-title">Hi, my name is</p>
-            <h1 class="hero-name">Ravindhar V</h1>
-            <h3 class="hero-subtitle">I secure the digital world.</h3>
-            <p class="hero-description">
-                I'm a Cyber Security Engineer specializing in penetration testing, network security, and IoT solutions. 
-                Currently focused on building secure, scalable solutions with my Bachelor's in Cyber Security.
-            </p>
-            <div class="cta-buttons">
-                <a href="#projects" class="cta-primary">View My Work</a>
-                <a href="javascript:void(0)" class="cta-secondary download-btn" onclick="handleResumeDownload(this)">
-                    Download CV
-                </a>
+        <div class="hero-container container">
+            <div class="hero-content" data-aos="fade-right">
+                <p class="hero-intro">Hi, my name is</p>
+                <h1 class="hero-name">Ravindhar V</h1>
+                <h3 class="hero-subtitle">Cyber Security Engineer</h3>
+                <p class="hero-description">
+                    I build and secure digital environments, specializing in penetration testing, network security, and IoT solutions. Actively seeking challenging opportunities in cybersecurity.
+                </p>
+                <br>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-primary">View My Work</a>
+                    <a href="assets/resume/Ravindhar_V_Resume.pdf" class="cta-secondary download-btn" download="Ravindhar_V_Resume.pdf">
+                       <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/ravindhar-cy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/RavindharCYS" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:ravindhar.upm@gmail.com" aria-label="Send Email" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/ravindhar-cy" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/RavindharCYS" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:ravindhar.upm@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-        <div class="hero-image" data-aos="fade-left">
-            <div class="profile-img-container">
-                <img src="assets/Profile.JPG" alt="Ravindhar V" class="profile-img">
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="100">
+                <div class="profile-img-container">
+                    <img src="assets/Profile.JPG" alt="Ravindhar V Headshot" class="profile-img" loading="eager" width="400" height="400">
+                </div>
             </div>
         </div>
     </section>
-        <!-- About Section -->
-<section id="about" class="about-section" data-aos="fade-up">
-    <style>
-        /* About Section Styles */
-        .about-section {
-            padding: 100px 10%;
-            background: rgba(10, 25, 47, 0.97);
-            position: relative;
-        }
 
-        .section-title {
-            font-size: 32px;
-            color: var(--text-primary);
-            margin-bottom: 40px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-column" data-aos="fade-up">
+                     <p>
+                        Hello! I'm <span class="text-accent">Ravindhar V</span>, a Cyber Security Engineer passionate about safeguarding digital assets. My journey started with a B.E. in Cyber Security, building a strong foundation in <span class="text-accent">Penetration testing</span>, <span class="text-accent">Network defense</span>, and securing <span class="text-accent">IoT ecosystems</span>.
+                    </p>
+                    <p>
+                        I focus on identifying vulnerabilities and implementing robust security measures. My goal is to leverage my skills to protect organizations from evolving cyber threats and contribute proactively to a safer digital world.
+                    </p>
+                </div>
+                <div class="about-column" data-aos="fade-up" data-aos-delay="100">
+                     <p>
+                        Graduating from Paavai Engineering College <span class="text-accent">CGPA: 7.55</span>, I've gained practical experience through focused training, internships, and projects. I'm proficient with industry tools like Metasploit, Burp Suite, Nmap, and Wireshark within Kali Linux environments.
+                    </p>
+                    <p>
+                        Cybersecurity demands continuous learning, a principle I embrace fully. I'm eager to apply my knowledge and collaborate on innovative security solutions.
+                    </p>
+                </div>
+            </div>
 
-        .section-title::after {
-            content: "";
-            flex: 1;
-            height: 1px;
-            background: var(--text-secondary);
-            margin-left: 20px;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Two equal columns */
-            gap: 50px;
-            margin-bottom: 40px;
-        }
-
-        .about-column {
-            text-align: justify;
-            color: var(--text-secondary);
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        .about-column p {
-            margin-bottom: 20px;
-        }
-
-        .highlight {
-            color: var(--secondary-color);
-            font-weight: 500;
-        }
-
-        .education-box {
-            grid-column: 1 / -1; /* Span across both columns */
-            background: rgba(100, 255, 218, 0.05);
-            border-radius: 10px;
-            padding: 25px;
-            margin-top: 30px;
-            border: 1px solid rgba(100, 255, 218, 0.1);
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .education-item {
-            padding: 20px;
-            border-radius: 8px;
-            background: rgba(100, 255, 218, 0.02);
-            transition: transform 0.3s ease;
-        }
-
-        .education-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .education-title {
-            color: var(--text-primary);
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .education-place {
-            color: var(--secondary-color);
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-
-        .education-date {
-            color: var(--text-secondary);
-            font-size: 14px;
-            font-style: italic;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .education-box {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-        }
-        .text-accent {
-        color: #3dffd2;
-        font-weight: 500;
-        background-color: transparent;
-        }
-
-        .text-accent:hover {
-        color: #5fffda;
-        text-shadow: 0 0 8px rgba(61, 255, 210, 0.3);
-        }
-
-    </style>
-
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-        <div class="about-column">
-            <p>
-                Hello! I'm <span class="text-accent">Ravindhar V</span>, a passionate <span class="text-accent">Cyber Security Engineer</span> with a keen interest in protecting digital assets and infrastructure. My journey in cybersecurity began during my undergraduate studies, where I developed a strong foundation in <span class="text-accent">Penetration testing</span>, <span class="text-accent">Network security</span>, and <span class="text-accent">IoT solutions</span>.
-            </p>
-            <p>
-                My expertise extends to various aspects of cybersecurity, including system administration, network diagnostics, and incident response. I'm particularly passionate about developing innovative solutions that help organizations protect their digital assets effectively.
-            </p>
+            <div class="education-box" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="subsection-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="education-item">
+                    <h4 class="education-title">Bachelor of Engineering in Cyber Security</h4>
+                    <p class="education-place">Paavai Engineering College, Namakkal</p>
+                    <p class="education-date">Graduated: May 2024 | CGPA: 7.55</p>
+                </div>
+                <div class="education-item">
+                    <h4 class="education-title">HSC (12th Grade) - Computer Science</h4>
+                    <p class="education-place">AIM Matriculation Higher Secondary School</p>
+                    <p class="education-date">Completed: 2020 | Percentage: 63.3%</p>
+                </div>
+                <div class="education-item">
+                    <h4 class="education-title">SSLC (10th Grade)</h4>
+                    <p class="education-place">AIM Matriculation Higher Secondary School</p>
+                    <p class="education-date">Completed: 2018 | Percentage: 77.2%</p>
+                </div>
+            </div>
         </div>
-        <div class="about-column">
-            <p>
-                I Completed my Bachelor of Engineering in Cyber Security at Paavai Engineering College, I've maintained a strong academic record with a <span class="text-accent">CGPA of 7.55</span>. Through my coursework and practical experience, I've gained proficiency in various security tools and frameworks.
-            </p>
-            <br>
-            <p>
-                I believe in continuous learning and staying updated with the latest developments in cybersecurity. My goal is to contribute to making the digital world a safer place through innovative security solutions and best practices.
-            </p>
-        </div>
-    </div>
+    </section>
 
-    <div class="education-box">
-        <div class="education-item" data-aos="fade-up">
-            <h3 class="education-title">Bachelor of Engineering in Cyber Security</h3>
-            <p class="education-place">Paavai Engineering College, Namakkal</p>
-            <p class="education-date">Graduation: May 2024 | CGPA: 7.55</p>
-        </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience & Certifications</h2>
 
-        <div class="education-item" data-aos="fade-up">
-            <h3 class="education-title">HSC (12th Grade)</h3>
-            <p class="education-place">AIM Matriculation Higher Secondary School</p>
-            <p class="education-date">2020 | Percentage: 63.3%</p>
-        </div>
-
-        <div class="education-item" data-aos="fade-up">
-            <h3 class="education-title">SSLC (10th Grade)</h3>
-            <p class="education-place">AIM Matriculation Higher Secondary School</p>
-            <p class="education-date">2018 | Percentage: 77.2%</p>
-        </div>
-    </div>
-</section>
-
-        <section id="experience" class="experience-section" data-aos="fade-up">
-            <style>
-                /* Experience Section Styles */
-                .experience-section {
-                    padding: 100px 10%;
-                    position: relative;
-                }
-        
-                .experience-timeline {
-                    position: relative;
-                    max-width: 1200px;
-                    margin: 0 auto;
-                }
-        
-                .timeline-item {
-                    position: relative;
-                    padding: 30px;
-                    background: rgba(100, 255, 218, 0.05);
-                    border-radius: 10px;
-                    margin-bottom: 30px;
-                    border: 1px solid rgba(100, 255, 218, 0.1);
-                    transition: transform 0.3s ease;
-                }
-        
-                .timeline-item:hover {
-                    transform: translateX(10px);
-                }
-        
-                .timeline-item::before {
-                    content: "";
-                    position: absolute;
-                    left: -10px;
-                    top: 50%;
-                    width: 20px;
-                    height: 20px;
-                    background: var(--secondary-color);
-                    border-radius: 50%;
-                    transform: translateY(-50%);
-                }
-        
-                .experience-title {
-                    font-size: 24px;
-                    color: var(--text-primary);
-                    margin-bottom: 10px;
-                }
-        
-                .experience-company {
-                    color: var(--secondary-color);
-                    font-size: 18px;
-                    margin-bottom: 10px;
-                }
-        
-                .experience-date {
-                    color: var(--text-secondary);
-                    font-size: 14px;
-                    margin-bottom: 15px;
-                }
-        
-                .experience-description {
-                    color: var(--text-secondary);
-                    font-size: 16px;
-                    line-height: 1.6;
-                }
-        
-                .experience-description ul {
-                    margin-left: 20px;
-                    margin-top: 10px;
-                }
-        
-                .experience-description li {
-                    margin-bottom: 5px;
-                }
-            </style>
-        
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item" data-aos="fade-left">
-                    <h3 class="experience-title">Cybersecurity Specialist</h3>
+            <h3 class="subsection-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+            <div class="experience-timeline" data-aos="fade-up">
+                 <div class="timeline-item">
+                    <h4 class="experience-title">Cybersecurity Specialist Program</h4>
                     <p class="experience-company">NIIT, Chennai</p>
                     <p class="experience-date">June – December 2024</p>
                     <div class="experience-description">
-                        <p>Comprehensive training in various aspects of cybersecurity, including:</p>
+                        <p>Intensive post-graduate program covering core cybersecurity domains:</p>
                         <ul>
-                            <li>Linux System Administration Advanced</li>
-                            <li>Programming and Scripting in Python</li>
-                            <li>Network Security and TCP/IP</li>
-                            <li>Cloud Computing and Containerization</li>
-                            <li>Ethical Hacking and Penetration Testing</li>
+                            <li>Advanced Linux System Administration & Security</li>
+                            <li>Python for Security Automation & Scripting</li>
+                            <li>Network Security Principles & TCP/IP Deep Dive</li>
+                            <li>Cloud Computing Fundamentals (AWS) & Container Security (Docker)</li>
+                            <li>Ethical Hacking Methodologies & Penetration Testing (VAPT)</li>
+                            <li>Security Operations (SecOps) & Incident Response Basics</li>
+                            <li>Hands-on labs using Kali Linux, Metasploit, Burp Suite, Nmap, Wireshark etc.</li>
                         </ul>
                     </div>
                 </div>
-        
-                <div class="timeline-item" data-aos="fade-left">
-                    <h3 class="experience-title">Web Design Intern</h3>
-                    <p class="experience-company">Asia University, Taiwan</p>
-                    <p class="experience-date">January 2023 – June 2023</p>
+                <div class="timeline-item">
+                    <h4 class="experience-title">Web Design Intern (Focus: Security)</h4>
+                    <p class="experience-company">Asia University, Taiwan (Remote/Collaborative Project)</p>
+                    <p class="experience-date">January – June 2023</p>
                     <div class="experience-description">
-                        <p>Contributed to web development projects with a focus on security:</p>
+                        <p>Contributed to web projects with an emphasis on secure development practices:</p>
                         <ul>
-                            <li>Developed responsive and secure websites</li>
-                            <li>Implemented security best practices</li>
-                            <li>Created user-friendly interfaces</li>
-                            <li>Optimized website performance</li>
+                            <li>Developed responsive web interfaces using HTML, CSS, JavaScript.</li>
+                            <li>Implemented input validation and output encoding techniques.</li>
+                            <li>Assisted in identifying and mitigating common web vulnerabilities (OWASP Top 10 awareness).</li>
+                            <li>Collaborated on version control using Git.</li>
+                            <li>Focused on creating user-friendly and secure user experiences.</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        
-            <!-- Certifications Section -->
-            <h3 class="category-title" style="margin-top: 50px;">Professional Certifications</h3>
-            <style>
-                .certifications-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                    gap: 25px;
-                    margin-top: 30px;
-                }
-                
-                .certification-card {
-                    background: rgba(100, 255, 218, 0.05);
-                    border-radius: 10px;
-                    padding: 25px;
-                    border: 1px solid rgba(100, 255, 218, 0.1);
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                }
-                
-                .certification-card:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
-                }
-                
-                .certification-header {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 15px;
-                }
-                
-                .certification-logo {
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 10%;
-                    background: #fff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: 15px;
-                    overflow: hidden;
-                }
-                
-                .certification-logo img {
-                    max-width: 100%;
-                    max-height: 100%;
-                    object-fit: contain;
-                }
-                
-                .certification-title {
-                    color: var(--text-primary);
-                    font-size: 18px;
-                    font-weight: 600;
-                    margin-bottom: 5px;
-                }
-                
-                .certification-issuer {
-                    color: var(--secondary-color);
-                    font-size: 16px;
-                }
-                
-                .certification-date {
-                    color: var(--text-secondary);
-                    font-size: 14px;
-                    margin-bottom: 15px;
-                }
-                
-                .certification-description {
-                    color: var(--text-secondary);
-                    text-align: justify;
-                    font-size: 15px;
-                    line-height: 1.5;
-                    margin-top: 10px;
-                }
-                
-                .credential-id {
-                    font-size: 13px;
-                    color: var(--text-secondary);
-                    margin-top: 10px;
-                    font-style: italic;
-                }
-                
-                .certification-skills {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 8px;
-                    margin-top: 15px;
-                }
-                
-                .certification-skill {
-                    background: rgba(100, 255, 218, 0.1);
-                    color: var(--secondary-color);
-                    padding: 4px 10px;
-                    border-radius: 12px;
-                    font-size: 12px;
-                }
-                
-                /* View Certificate Button Styles */
-                .view-certificate {
-                    display: inline-block;
-                    margin-top: 15px;
-                    padding: 8px 15px;
-                    background: transparent;
-                    border: 1px solid var(--secondary-color);
-                    border-radius: 5px;
-                    color: var(--secondary-color);
-                    font-size: 14px;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                }
-                
-                .view-certificate:hover {
-                    background: rgba(100, 255, 218, 0.1);
-                    transform: translateY(-2px);
-                }
-                
-                .view-certificate i {
-                    margin-right: 5px;
-                }
-            </style>
-        
+
+            <h3 class="subsection-title" data-aos="fade-up"><i class="fas fa-certificate"></i> Professional Certifications</h3>
             <div class="certifications-grid">
-                <!-- Fortinet Certified Associate in Cybersecurity -->
-                <div class="certification-card" data-aos="fade-up">
-                    <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/Fortinet.png" alt="Fortinet">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Fortinet Certified Associate in Cybersecurity</h4>
-                            <p class="certification-issuer">Fortinet</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued April 2025 – Expires April 2027</p>
-                    <p class="credential-id">Credential ID: 4113782911RV</p>
-                    <p class="certification-description">
-                        Successfully completed the Fortinet Certified Associate in Cybersecurity certification. Validates foundational knowledge of cybersecurity concepts, threat landscape, and essential Fortinet product awareness.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">Cybersecurity Fundamentals</span>
-                        <span class="certification-skill">Threat Landscape Understanding</span>
-                        <span class="certification-skill">Fortinet Product Knowledge</span>
-                        <span class="certification-skill">Security Awareness</span>
-                    </div>
-                    <a href="assets/Certifications/Fortinet Certified Associate in Cybersecurity.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
+                <!-- Fortinet Certified Associate -->
+               <div class="card certification-card" data-aos="fade-up">
+                   <div class="certification-header">
+                       <div class="certification-logo"><img src="./assets/logos/Fortinet.png" alt="Fortinet Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Certified Associate in Cybersecurity</h4>
+                           <p class="certification-issuer">Fortinet</p>
+                       </div>
+                   </div>
+                   <div class="certification-content">
+                       <p class="certification-date">Issued April 2025 – Expires April 2027</p>
+                       <p class="credential-id">ID: 4113782911RV</p>
+                       <p class="certification-description"> Validates foundational knowledge of the threat landscape, cybersecurity concepts, and Fortinet solutions.</p>
+                       <div class="certification-skills">
+                           <span class="tech-tag">Fundamentals</span><span class="tech-tag">Threats</span><span class="tech-tag">Fortinet</span>
+                       </div>
+                   </div>
+                   <div class="certification-footer">
+                        <a href="assets/Certifications/Fortinet%20Certified%20Associate%20in%20Cybersecurity.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
 
-                <!-- Fortinet FortiGate 7.4 Operator -->
-                <div class="certification-card" data-aos="fade-up">
+               <!-- Fortinet FortiGate Operator -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="50">
                     <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/Fortinet.png" alt="Fortinet">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Fortinet FortiGate 7.4 Operator</h4>
-                            <p class="certification-issuer">Fortinet</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued April 2025</p>
-                    <p class="credential-id">Credential ID: Not Provided</p>
-                    <p class="certification-description">
-                        Successfully completed the Fortinet FortiGate 7.4 Operator course, covering essential operations, monitoring, and configuration of FortiGate devices in enterprise environments.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">FortiGate Basics</span>
-                        <span class="certification-skill">Firewall Policy Configuration</span>
-                        <span class="certification-skill">Device Monitoring</span>
-                        <span class="certification-skill">Security Profiles</span>
-                        <span class="certification-skill">Log and Report Management</span>
-                    </div>
-                    <a href="assets/Certifications/Fortinet.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
+                       <div class="certification-logo"><img src="./assets/logos/Fortinet.png" alt="Fortinet Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Fortinet FortiGate 7.4 Operator</h4>
+                           <p class="certification-issuer">Fortinet</p>
+                       </div>
+                   </div>
+                    <div class="certification-content">
+                       <p class="certification-date">Issued April 2025</p>
+                       <p class="certification-description">Covers day-to-day operation, monitoring, and configuration of FortiGate devices in an enterprise network.</p>
+                       <div class="certification-skills">
+                           <span class="tech-tag">FortiGate</span><span class="tech-tag">Firewall</span><span class="tech-tag">Monitoring</span><span class="tech-tag">NGFW</span>
+                       </div>
+                   </div>
+                   <div class="certification-footer">
+                       <a href="assets/Certifications/Fortinet.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
 
-                <!-- Certified AppSec Practitioner -->
-                <div class="certification-card" data-aos="fade-up">
-                    <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/SecOps.png" alt="The SecOps Group">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Certified AppSec Practitioner</h4>
-                            <p class="certification-issuer">The SecOps Group</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued April 2025</p>
-                    <p class="credential-id">Credential ID: 9914643</p>
-                    <p class="certification-description">
-                        Successfully completed the Certified AppSec Practitioner (CAP) exam from The SecOps Group, demonstrating strong foundational knowledge in application security. Gained hands-on skills in identifying and mitigating common web application vulnerabilities.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">OWASP Top 10 Vulnerabilities</span>
-                        <span class="certification-skill">Secure Coding Practices</span>
-                        <span class="certification-skill">Threat Modeling Basics</span>
-                        <span class="certification-skill">Input Validation & Output Encoding</span>
-                        <span class="certification-skill">Authentication & Session Management</span>
-                        <span class="certification-skill">Access Control Mechanisms</span>
-                    </div>
-                    <a href="assets/Certifications/CAP.pdf" class="view-certificate" target="_blank"><i class="fas fa-award" ></i> View Certificate</a>
-                </div>
+               <!-- Certified AppSec Practitioner -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="100">
+                   <div class="certification-header">
+                       <div class="certification-logo"><img src="./assets/logos/SecOps.png" alt="The SecOps Group Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Certified AppSec Practitioner (CAP)</h4>
+                           <p class="certification-issuer">The SecOps Group</p>
+                       </div>
+                   </div>
+                   <div class="certification-content">
+                       <p class="certification-date">Issued April 2025</p>
+                       <p class="credential-id">ID: 9914643</p>
+                       <p class="certification-description">Demonstrates foundational application security knowledge, including OWASP Top 10 and secure coding principles.</p>
+                        <div class="certification-skills">
+                           <span class="tech-tag">AppSec</span><span class="tech-tag">OWASP</span><span class="tech-tag">Secure Code</span><span class="tech-tag">Web</span>
+                       </div>
+                   </div>
+                   <div class="certification-footer">
+                       <a href="assets/Certifications/CAP.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
 
                 <!-- Certified Network Security Practitioner -->
-                <div class="certification-card" data-aos="fade-up">
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="150">
+                   <div class="certification-header">
+                       <div class="certification-logo"><img src="./assets/logos/SecOps.png" alt="The SecOps Group Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Certified Network Security Practitioner (CNSP)</h4>
+                           <p class="certification-issuer">The SecOps Group</p>
+                       </div>
+                   </div>
+                    <div class="certification-content">
+                       <p class="certification-date">Issued April 2025</p>
+                       <p class="credential-id">ID: 9914665</p>
+                       <p class="certification-description">Validates practical skills in securing network infrastructure, understanding protocols, and mitigating network threats.</p>
+                       <div class="certification-skills">
+                           <span class="tech-tag">Network Security</span><span class="tech-tag">TCP/IP</span><span class="tech-tag">Firewalls</span><span class="tech-tag">VPN</span>
+                       </div>
+                   </div>
+                    <div class="certification-footer">
+                       <a href="assets/Certifications/CNSP.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
+
+               <!-- Cisco Certified Ethical Hacker -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="50">
                     <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/SecOps.png" alt="The SecOps Group">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Certified Network Security Practitioner</h4>
-                            <p class="certification-issuer">The SecOps Group</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued April 2025</p>
-                    <p class="credential-id">Credential ID: 9914665</p>
-                    <p class="certification-description">
-                        Successfully completed the Certified Network Security Practitioner (CNSP) exam from The SecOps Group. Gained practical knowledge in securing network infrastructures, understanding protocols, and mitigating network-based threats.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">Network Security Fundamentals</span>
-                        <span class="certification-skill">TCP/IP & OSI Model Understanding</span>
-                        <span class="certification-skill">Firewall Configuration & Management</span>
-                        <span class="certification-skill">Intrusion Detection & Prevention Systems</span>
-                        <span class="certification-skill">VPN & Secure Tunneling Protocols</span>
-                        <span class="certification-skill">Network Access Control</span>
-                        <span class="certification-skill">Wireless Network Security</span>
-                    </div>
-                    <a href="assets/Certifications/CNSP.pdf" class="view-certificate" target="_blank"><i class="fas fa-award" ></i> View Certificate</a>
-                </div>
+                       <div class="certification-logo"><img src="./assets/logos/Cisco.png" alt="Cisco Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Ethical Hacker</h4>
+                           <p class="certification-issuer">Cisco Networking Academy</p>
+                       </div>
+                   </div>
+                    <div class="certification-content">
+                       <p class="certification-date">Issued April 2025</p>
+                       <p class="certification-description">Covers ethical hacking methodologies, vulnerability analysis, penetration testing tools, and reporting.</p>
+                       <div class="certification-skills">
+                          <span class="tech-tag">Ethical Hacking</span><span class="tech-tag">Pen Testing</span><span class="tech-tag">Vuln Analysis</span>
+                       </div>
+                   </div>
+                   <div class="certification-footer">
+                       <a href="assets/Certifications/Cisco%20Certified%20Ethical%20Hacker.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
 
-                <!-- Cisco Certified Ethical Hacker -->
-                <div class="certification-card" data-aos="fade-up">
+               <!-- NIIT Certified Cybersecurity Professional -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/Cisco.png" alt="Cisco logo">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Ethical Hacker</h4>
-                            <p class="certification-issuer">Cisco</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued Apr 2025</p>
-                    <p class="certification-description">
-                        The certification validated expertise in identifying system vulnerabilities, exploiting them ethically, and providing actionable remediation. Covered areas include footprinting, vulnerability analysis, system hacking, malware threats, and web application security.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">Ethical Hacking</span>
-                        <span class="certification-skill">Pentest Assessment</span>
-                        <span class="certification-skill">Vulnerability Scanning</span>
-                        <span class="certification-skill">Social Engineering Attacks</span>
-                        <span class="certification-skill">Wired and Wireless Networks</span>
-                        <span class="certification-skill">Application-Based Vulnerabilities</span>
-                        <span class="certification-skill">Cloud, Mobile, and IoT Security</span>
-                        <span class="certification-skill">Post-Exploitation</span>
-                        <span class="certification-skill">Code Analysis</span>
-                        <span class="certification-skill">Reporting and Communication</span>
-                    </div>
-                    <a href="assets/Certifications/Cisco Certified Ethical Hacker.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
-        
-                <!-- NIIT Certified Cybersecurity Professional -->
-                <div class="certification-card" data-aos="fade-up">
+                       <div class="certification-logo"><img src="./assets/logos/NIIT.png" alt="NIIT Limited Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Certified Cybersecurity Professional</h4>
+                           <p class="certification-issuer">NIIT Limited</p>
+                       </div>
+                   </div>
+                    <div class="certification-content">
+                       <p class="certification-date">Issued Feb 2025</p>
+                       <p class="certification-description">Comprehensive program covering Linux, Python, Networking, Cloud, Ethical Hacking, VAPT, and SecOps.</p>
+                        <div class="certification-skills">
+                          <span class="tech-tag">Linux</span><span class="tech-tag">Python</span><span class="tech-tag">Network</span><span class="tech-tag">Cloud</span><span class="tech-tag">VAPT</span><span class="tech-tag">SecOps</span>
+                       </div>
+                   </div>
+                    <div class="certification-footer">
+                       <a href="assets/Certifications/RAVINDHAR V.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
+
+               <!-- Google Cyber Security Professional -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="150">
+                   <div class="certification-header">
+                       <div class="certification-logo"><img src="./assets/logos/Google.png" alt="Google Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Google Cybersecurity Professional Certificate</h4>
+                           <p class="certification-issuer">Google (Coursera)</p>
+                       </div>
+                   </div>
+                    <div class="certification-content">
+                       <p class="certification-date">Issued Jan 2023</p>
+                       <p class="certification-description">Covers cybersecurity principles, risk management, network security, SIEM tools, and incident response.</p>
+                        <div class="certification-skills">
+                          <span class="tech-tag">Cybersecurity</span><span class="tech-tag">Risk Mgmt</span><span class="tech-tag">SIEM</span><span class="tech-tag">Python</span>
+                       </div>
+                   </div>
+                    <div class="certification-footer">
+                       <a href="assets/Certifications/Google%20Cyber%20Security.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
+
+               <!-- Java Business Application -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="50">
                     <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/NIIT.png" alt="NIIT Limited logo">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Certified Cybersecurity Professional</h4>
-                            <p class="certification-issuer">NIIT</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued Feb 2025</p>
-                    <p class="certification-description">
-                        Gained advanced skills in Linux Administration, Python Programming, Network Security, Cloud Computing, Ethical Hacking, and Vulnerability Assessment and Penetration Testing (VAPT).
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">Linux System Administration Essentials</span>
-                        <span class="certification-skill">Python</span>
-                        <span class="certification-skill">Logical & Physical Networks & Internetworking with TCP/IP</span>
-                        <span class="certification-skill">Advanced Linux Admin</span>
-                        <span class="certification-skill">Cloud Computing</span>
-                        <span class="certification-skill">Information Security Systems</span>
-                        <span class="certification-skill">Ethical Hacking</span>
-                        <span class="certification-skill">Exploitation of InfoSystem</span>
-                        <span class="certification-skill">Security Operations of InfoSystems</span>
-                        <span class="certification-skill">Realtime Environment Practices</span>
-                    </div>
-                    <a href="assets/Certifications/RAVINDHAR V.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
-        
-                <!-- Google Cyber Security Professional -->
-                <div class="certification-card" data-aos="fade-up">
+                       <div class="certification-logo"><img src="./assets/logos/Java.png" alt="Spoken Tutorial Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Java Business Application</h4>
+                           <p class="certification-issuer">Spoken Tutorial, IIT Bombay</p>
+                       </div>
+                   </div>
+                    <div class="certification-content">
+                       <p class="certification-date">Issued Dec 2022</p>
+                       <p class="credential-id">ID: 3230347CVG</p>
+                       <p class="certification-description">Training on core Java concepts for developing business applications, including OOP and basic frameworks.</p>
+                        <div class="certification-skills">
+                           <span class="tech-tag">Java</span><span class="tech-tag">OOP</span><span class="tech-tag">JDBC</span><span class="tech-tag">Spring</span>
+                       </div>
+                   </div>
+                   <div class="certification-footer">
+                       <a href="assets/Certifications/Java.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
+
+               <!-- Red Hat Certified System Administrator -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/Google.png" alt="Google logo">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Google Cyber Security Professional</h4>
-                            <p class="certification-issuer">Google</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued Jan 2023</p>
-                    <p class="certification-description">
-                        Completed the Google Cybersecurity Professional Certificate, gaining skills in risk management, network security, threat detection, and incident response.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">Foundations of Cybersecurity</span>
-                        <span class="certification-skill">Risk Management</span>
-                        <span class="certification-skill">Network Security</span>
-                        <span class="certification-skill">Linux Command Line</span>
-                        <span class="certification-skill">SQL</span>
-                        <span class="certification-skill">Security Information and Event Management</span>
-                        <span class="certification-skill">Incident Detection and Response</span>
-                        <span class="certification-skill">Threat Intelligence</span>
-                        <span class="certification-skill">Automating Security Tasks</span>
-                        <span class="certification-skill">Professional Cybersecurity Capstone</span>
+                       <div class="certification-logo"><img src="./assets/logos/RedHat.png" alt="Red Hat Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Red Hat Certified System Administrator (RHCSA)</h4>
+                           <p class="certification-issuer">Red Hat</p>
+                       </div>
+                   </div>
+                   <div class="certification-content">
+                       <p class="certification-date">Issued Nov 2022</p>
+                       <p class="credential-id">ID: 2022/ADV/12358</p>
+                       <p class="certification-description">Hands-on certification covering core Linux system administration tasks, user management, storage, and networking.</p>
+                        <div class="certification-skills">
+                          <span class="tech-tag">Linux</span><span class="tech-tag">RHCSA</span><span class="tech-tag">SysAdmin</span><span class="tech-tag">Shell</span>
+                       </div>
+                   </div>
+                   <div class="certification-footer">
+                       <a href="assets/Certifications/RedHat.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
 
-                    </div>
-                    <a href="assets/Certifications/Google Cyber Security.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
-        
-                <!-- Java Business Application -->
-                <div class="certification-card" data-aos="fade-up">
-                    <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/Java.png" alt="Spoken Tutorial logo">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Java Business Application</h4>
-                            <p class="certification-issuer">Spoken Tutorial</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued Dec 2022</p>
-                    <p class="credential-id">Credential ID: 3230347CVG</p>
-                    <p class="certification-description">
-                        Completed the Java Business Application course through Spoken Tutorial by IIT Bombay. Developed core skills in Java programming for building real-world business solutions.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">Object-Oriented Design and Principles</span>
-                        <span class="certification-skill">Java Database Connectivity</span>
-                        <span class="certification-skill">Spring Framework</span>
-                        <span class="certification-skill">Hibernate ORM</span>
-                        <span class="certification-skill">Spring Boot</span>
-                        <span class="certification-skill">Business Logic</span>
-                        <span class="certification-skill">Enterprise Application Architecture</span>
-                        <span class="certification-skill">Exception Handling and Logging</span>
-                        <span class="certification-skill">Real-Time Application Development</span>
+               <!-- UiPath Robot Processing Application -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="150">
+                   <div class="certification-header">
+                       <div class="certification-logo"><img src="./assets/logos/UiPath.png" alt="UiPath Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Robotic Process Automation (RPA)</h4>
+                           <p class="certification-issuer">UiPath</p>
+                       </div>
+                   </div>
+                    <div class="certification-content">
+                       <p class="certification-date">Issued 2022</p>
+                       <p class="credential-id">ID: S1782134</p>
+                       <p class="certification-description">Training in designing, developing, and deploying software robots using the UiPath RPA platform.</p>
+                        <div class="certification-skills">
+                           <span class="tech-tag">RPA</span><span class="tech-tag">UiPath</span><span class="tech-tag">Automation</span><span class="tech-tag">Workflow</span>
+                       </div>
+                   </div>
+                   <div class="certification-footer">
+                       <a href="assets/Certifications/RPA.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
 
-                        <span class="certification-skill">Business Applications</span>
-                        <span class="certification-skill">Software Development</span>
-                    </div>
-                    <a href="assets/Certifications/Java.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
-        
-                <!-- Red Hat Certified System Administrator -->
-                <div class="certification-card" data-aos="fade-up">
-                    <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/RedHat.png" alt="Red Hat logo">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Red Hat Certified System Administrator (RHCSA)</h4>
-                            <p class="certification-issuer">Red Hat</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued Nov 2022</p>
-                    <p class="credential-id">Credential ID: 2022/ADV/12358</p>
-                    <p class="certification-description">
-                        Achieved Red Hat Certified System Administrator (RHCSA) certification from Red Hat. Gained hands-on skills in Linux system administration, user management, and networking. Focused on managing servers, configuring storage, and automating tasks using shell scripts.
-
-
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">System Architecture</span>
-                        <span class="certification-skill">User & Group Management</span>
-                        <span class="certification-skill">File System & Partitions</span>
-                        <span class="certification-skill">Package Management (YUM/RPM)</span>
-                        <span class="certification-skill">Service & Process Control</span>
-                        <span class="certification-skill">Network & Firewall Setup</span>
-                        <span class="certification-skill">Shell Scripting</span>
-                        <span class="certification-skill">SELinux & Security</span>
-                        <span class="certification-skill">Logging & Troubleshooting</span>
-                        <span class="certification-skill">Hands-on Practice</span>
-
-                    </div>
-                    <a href="assets/Certifications/RedHat.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
-        
-                <!-- UiPath Robot Processing Application -->
-                <div class="certification-card" data-aos="fade-up">
-                    <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/UiPath.png" alt="UiPath logo">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Robot Processing Application</h4>
-                            <p class="certification-issuer">UiPath</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued 2022</p>
-                    <p class="credential-id">Credential ID: S1782134</p>
-                    <p class="certification-description">
-                        Completed training and certification in Robotic Process Automation (RPA) with UiPath. Gained expertise in designing, developing, and deploying automation workflows.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">RPA Concepts & Architecture</span>
-                        <span class="certification-skill">UiPath Studio Essentials</span>
-                        <span class="certification-skill">Selectors & Control Flows</span>
-                        <span class="certification-skill">Data Scraping & Manipulation</span>
-                        <span class="certification-skill">Excel & File Automation</span>
-                        <span class="certification-skill">Email Automation</span>
-                        <span class="certification-skill">PDF & Document Automation</span>
-                        <span class="certification-skill">Orchestrator Basics</span>
-                        <span class="certification-skill">Debugging & Exception Handling</span>
-                        <span class="certification-skill">End-to-End Bot Development</span>
-
-                    </div>
-                    <a href="assets/Certifications/RPA.pdf" class="view-certificate" target="_blank"><i class="fas fa-award"></i> View Certificate</a>
-                </div>
-        
-                <!-- Asia University Web Development -->
-                <div class="certification-card" data-aos="fade-up">
-                    <div class="certification-header">
-                        <div class="certification-logo">
-                            <img src="assets/logos/AsiaUniversity.png" alt="Asia University logo">
-                        </div>
-                        <div>
-                            <h4 class="certification-title">Webpage Development</h4>
-                            <p class="certification-issuer">Asia University (Taiwan)</p>
-                        </div>
-                    </div>
-                    <p class="certification-date">Issued July 2023</p>
-                    <p class="credential-id">Credential ID: 2023001024</p>
-                    <p class="certification-description">
-                        Completed Web Design training at Asia University, Taiwan, focusing on creating responsive and visually appealing websites.
-                    </p>
-                    <div class="certification-skills">
-                        <span class="certification-skill">HTML5 & Semantic Structure</span>
-                        <span class="certification-skill">CSS3 Styling & Layouts</span>
-                        <span class="certification-skill">Responsive Web Design</span>
-                        <span class="certification-skill">JavaScript Basics</span>
-                        <span class="certification-skill">Form Design & Validation</span>
-                        <span class="certification-skill">Web Design Principles</span>
-                        <span class="certification-skill">UI/UX Fundamentals</span>
-                        <span class="certification-skill">Cross-Browser Compatibility</span>
-                        <span class="certification-skill">Website Deployment</span>
-                        <span class="certification-skill">Project-Based Learning</span>
-
-                    </div>
-                    <a href="assets/Certifications/Asia University.pdf" class="view-certificate" target="_blank"><i class="fas fa-award" ></i> View Certificate</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section" data-aos="fade-up">
-        <style>
-            /* Skills Section Styles */
-            .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .skill-category {
-            margin-bottom: 50px;
-        }
-
-        .skill-category h3 {
-            color: var(--secondary-color);
-            font-size: 24px;
-            margin-bottom: 25px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .skill-category h3 i {
-            font-size: 20px;
-        }
-            .skills-section {
-                padding: 100px 10%;
-                background: rgba(10, 25, 47, 0.97);
-            }
-
-            .skills-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 50px;
-            }
-
-            .skills-category {
-                margin-bottom: 40px;
-            }
-
-            .skills-category h3 {
-                color: var(--secondary-color);
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-
-            .skill-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 20px;
-            }
-
-            .skill-item {
-                background: rgba(100, 255, 218, 0.05);
-                border-radius: 8px;
-                padding: 15px;
-                text-align: center;
-                transition: all 0.3s ease;
-                border: 1px solid rgba(100, 255, 218, 0.1);
-            }
-
-            .skill-item:hover {
-                transform: translateY(-5px);
-                background: rgba(100, 255, 218, 0.1);
-            }
-
-            .skill-icon {
-                font-size: 30px;
-                color: var(--secondary-color);
-                margin-bottom: 10px;
-            }
-
-            .skill-name {
-                color: var(--text-primary);
-                font-size: 16px;
-                margin-bottom: 5px;
-            }
-
-            .skill-level {
-                width: 100%;
-                height: 4px;
-                background: rgba(100, 255, 218, 0.1);
-                border-radius: 2px;
-                margin-top: 10px;
-                position: relative;
-            }
-
-            .skill-progress {
-                position: absolute;
-                left: 0;
-                top: 0;
-                height: 100%;
-                background: var(--secondary-color);
-                border-radius: 2px;
-                transition: width 1s ease;
-            }
-        </style>
-
-<h2 class="section-title">Skills & Expertise</h2>
-<div class="skills-container">
-    <!-- Programming & Development -->
-    <div class="skill-category">
-        <h3><i class="fas fa-code"></i> Programming & Development</h3>
-        <div class="skill-grid">
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-python skill-icon"></i>
-                <h4 class="skill-name">Python</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-java skill-icon"></i>
-                <h4 class="skill-name">Java</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-code skill-icon"></i>
-                <h4 class="skill-name">C/C++</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-js skill-icon"></i>
-                <h4 class="skill-name">JavaScript</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 75%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-html5 skill-icon"></i>
-                <h4 class="skill-name">HTML5</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-css3-alt skill-icon"></i>
-                <h4 class="skill-name">CSS3</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-php skill-icon"></i>
-                <h4 class="skill-name">PHP</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 75%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-database skill-icon"></i>
-                <h4 class="skill-name">SQL</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
+               <!-- Asia University Web Development -->
+               <div class="card certification-card" data-aos="fade-up" data-aos-delay="50">
+                   <div class="certification-header">
+                       <div class="certification-logo"><img src="./assets/logos/AsiaUniversity.png" alt="Asia University Logo" width="44" height="44"></div>
+                       <div>
+                           <h4 class="certification-title">Webpage Development</h4>
+                           <p class="certification-issuer">Asia University, Taiwan</p>
+                       </div>
+                   </div>
+                   <div class="certification-content">
+                       <p class="certification-date">Issued July 2023</p>
+                       <p class="credential-id">ID: 2023001024</p>
+                       <p class="certification-description">Completed web design training focusing on responsive design, HTML5, CSS3, and basic JavaScript.</p>
+                       <div class="certification-skills">
+                           <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Responsive</span>
+                       </div>
+                   </div>
+                    <div class="certification-footer">
+                       <a href="assets/Certifications/Asia%20University.pdf" class="btn-certificate" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> View Certificate</a>
+                   </div>
+               </div>
+            </div> <!-- /.certifications-grid -->
         </div>
-    </div>
-
-    <!-- Security Tools -->
-    <div class="skill-category">
-        <h3><i class="fas fa-shield-alt"></i> Security Tools & Frameworks</h3>
-        <div class="skill-grid">
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-network-wired skill-icon"></i>
-                <h4 class="skill-name">Wireshark</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-bug skill-icon"></i>
-                <h4 class="skill-name">Metasploit</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-user-secret skill-icon"></i>
-                <h4 class="skill-name">Burp Suite</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 88%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-key skill-icon"></i>
-                <h4 class="skill-name">John the Ripper</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 82%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-lock skill-icon"></i>
-                <h4 class="skill-name">Hydra</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-spider skill-icon"></i>
-                <h4 class="skill-name">OWASP ZAP</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-shield-virus skill-icon"></i>
-                <h4 class="skill-name">Nmap</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 88%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-laptop-code skill-icon"></i>
-                <h4 class="skill-name">RouterSploit</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 75%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-eye skill-icon"></i>
-                <h4 class="skill-name">Wazuh</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Operating Systems -->
-    <div class="skill-category">
-        <h3><i class="fas fa-desktop"></i> Operating Systems</h3>
-        <div class="skill-grid">
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-linux skill-icon"></i>
-                <h4 class="skill-name">Kali Linux</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 92%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-ubuntu skill-icon"></i>
-                <h4 class="skill-name">Ubuntu</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 88%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-windows skill-icon"></i>
-                <h4 class="skill-name">Windows</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-apple skill-icon"></i>
-                <h4 class="skill-name">MacOS</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Cloud & DevOps -->
-    <div class="skill-category">
-        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-        <div class="skill-grid">
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-aws skill-icon"></i>
-                <h4 class="skill-name">AWS</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fab fa-docker skill-icon"></i>
-                <h4 class="skill-name">Docker</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 75%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-server skill-icon"></i>
-                <h4 class="skill-name">Hyper-V</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 78%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-chart-line skill-icon"></i>
-                <h4 class="skill-name">Zabbix</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 82%"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Soft Skills -->
-    <div class="skill-category">
-        <h3><i class="fas fa-users"></i> Soft Skills</h3>
-        <div class="skill-grid">
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-brain skill-icon"></i>
-                <h4 class="skill-name">Problem Solving</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 95%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-comments skill-icon"></i>
-                <h4 class="skill-name">Communication</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-tasks skill-icon"></i>
-                <h4 class="skill-name">Project Management</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-item" data-aos="fade-up">
-                <i class="fas fa-users-cog skill-icon"></i>
-                <h4 class="skill-name">Team Leadership</h4>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 88%"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <!-- This container is a 2-column grid for categories on large screens -->
+            <div class="skills-container">
+
+                <!-- Programming & Development Category (Left) -->
+                <div class="skill-category" data-aos="fade-right">
+                    <h3><i class="fas fa-code"></i> Programming & Development</h3>
+                    <!-- Inner grid for cards - 3 columns -->
+                    <div class="skill-grid">
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-python skill-icon"></i><h4 class="skill-name">Python</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 90%; background-color: #4CAF50;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-java skill-icon"></i><h4 class="skill-name">Java</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 70%; background-color: #FFC107;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-terminal skill-icon"></i><h4 class="skill-name">Shell Scripting (Bash)</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 80%; background-color: #2196F3;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-html5 skill-icon"></i><h4 class="skill-name">HTML5</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 85%; background-color: #E91E63;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-css3-alt skill-icon"></i><h4 class="skill-name">CSS3</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 80%; background-color: #673AB7;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-js skill-icon"></i><h4 class="skill-name">JavaScript</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 65%; background-color: #FF9800;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-database skill-icon"></i><h4 class="skill-name">SQL (MySQL)</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 75%; background-color: #00BCD4;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-php skill-icon"></i><h4 class="skill-name">PHP (Basic)</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 60%; background-color: #9C27B0;"></div></div> </div>
+                    </div>
+                </div> <!-- End Programming Category -->
+
+                <!-- Security Tools & Frameworks Category (Right) -->
+                <div class="skill-category" data-aos="fade-left">
+                    <h3><i class="fas fa-shield-alt"></i> Security Tools & Frameworks</h3>
+                    <!-- Inner grid for cards - 3 columns -->
+                    <div class="skill-grid">
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-skull-crossbones skill-icon"></i><h4 class="skill-name">Metasploit</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 85%; background-color: #F44336;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-bug skill-icon"></i><h4 class="skill-name">Burp Suite</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 90%; background-color: #FF5722;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-search skill-icon"></i><h4 class="skill-name">Nmap</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 90%; background-color: #795548;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-network-wired skill-icon"></i><h4 class="skill-name">Wireshark</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 85%; background-color: #03A9F4;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-user-secret skill-icon"></i><h4 class="skill-name">OWASP ZAP</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 80%; background-color: #8BC34A;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-key skill-icon"></i><h4 class="skill-name">John the Ripper</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 75%; background-color: #CDDC39;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-lock skill-icon"></i><h4 class="skill-name">Hydra</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 70%; background-color: #FFEB3B; color: #333;"></div></div> </div> <!-- Added text color for yellow bg -->
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-shield-virus skill-icon"></i><h4 class="skill-name">Nessus Essentials</h4></div> <div class="skill-level"><div class="skill-progress" style="width: 75%; background-color: #FF9800;"></div></div> </div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-eye skill-icon"></i><h4 class="skill-name">Wazuh (SIEM)</h4></div><div class="skill-level"><div class="skill-progress" style="width: 70%; background-color: #607D8B;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-laptop-code skill-icon"></i><h4 class="skill-name">RouterSploit</h4></div><div class="skill-level"><div class="skill-progress" style="width: 65%; background-color: #E91E63;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-fort-awesome-alt skill-icon"></i><h4 class="skill-name">FortiGate (Basic)</h4></div><div class="skill-level"><div class="skill-progress" style="width: 60%; background-color: #3F51B5;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-file-code skill-icon"></i><h4 class="skill-name">Volatility (Basic)</h4></div><div class="skill-level"><div class="skill-progress" style="width: 50%; background-color: #009688;"></div></div></div>
+                    </div>
+                </div> <!-- End Security Tools Category -->
+
+                <!-- Operating Systems & Platforms Category (Left) -->
+                <div class="skill-category" data-aos="fade-right">
+                    <h3><i class="fas fa-laptop"></i> Operating Systems & Platforms</h3>
+                     <!-- Inner grid for cards - 3 columns -->
+                    <div class="skill-grid">
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-linux skill-icon"></i><h4 class="skill-name">Kali Linux</h4></div><div class="skill-level"><div class="skill-progress" style="width: 95%; background-color: #F44336;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-ubuntu skill-icon"></i><h4 class="skill-name">Ubuntu / Debian</h4></div><div class="skill-level"><div class="skill-progress" style="width: 85%; background-color: #E91E63;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-redhat skill-icon"></i><h4 class="skill-name">RHEL / CentOS</h4></div><div class="skill-level"><div class="skill-progress" style="width: 75%; background-color: #9C27B0;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-windows skill-icon"></i><h4 class="skill-name">Windows (Desktop/Server)</h4></div><div class="skill-level"><div class="skill-progress" style="width: 80%; background-color: #673AB7;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-aws skill-icon"></i><h4 class="skill-name">AWS (Basics)</h4></div><div class="skill-level"><div class="skill-progress" style="width: 65%; background-color: #3F51B5;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fab fa-docker skill-icon"></i><h4 class="skill-name">Docker Basics</h4></div><div class="skill-level"><div class="skill-progress" style="width: 70%; background-color: #2196F3;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-server skill-icon"></i><h4 class="skill-name">Hyper-V / VMware</h4></div><div class="skill-level"><div class="skill-progress" style="width: 75%; background-color: #03A9F4;"></div></div></div>
+                        <div class="skill-card"> <div class="skill-header"><i class="fas fa-server skill-icon"></i><h4 class="skill-name">Active Directory Basics</h4></div><div class="skill-level"><div class="skill-progress" style="width: 60%; background-color: #00BCD4;"></div></div></div>
+                    </div>
+                </div> <!-- End OS Category -->
+
+                <!-- Core Competencies Category (Right) -->
+                <div class="skill-category" data-aos="fade-left">
+                    <h3><i class="fas fa-crosshairs"></i> Core Competencies</h3>
+                    <!-- Inner grid for cards - 3 columns -->
+                    <div class="skill-grid competence-grid">
+                        <!-- Competencies don't have progress bars -->
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-search-plus skill-icon"></i><h4 class="skill-name">Vulnerability Assessment</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-user-shield skill-icon"></i><h4 class="skill-name">Penetration Testing (Web, Network)</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-network-wired skill-icon"></i><h4 class="skill-name">Network Security</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-wifi skill-icon"></i><h4 class="skill-name">Wireless Security</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-microchip skill-icon"></i><h4 class="skill-name">IoT Security</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fab fa-osi skill-icon"></i><h4 class="skill-name">TCP/IP & OSI Model</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-bug-slash skill-icon"></i><h4 class="skill-name">Malware Analysis Basics</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-file-alt skill-icon"></i><h4 class="skill-name">Security Auditing & Reporting</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-shield-halved skill-icon"></i><h4 class="skill-name">Incident Response Basics</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-cloud-arrow-up skill-icon"></i><h4 class="skill-name">Cloud Security Fundamentals</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-lock skill-icon"></i><h4 class="skill-name">Cryptography Concepts</h4></div> </div>
+                        <div class="skill-card skill-card-competence"> <div class="skill-header"><i class="fas fa-user-secret skill-icon"></i><h4 class="skill-name">Social Engineering Awareness</h4></div> </div>
+                    </div>
+                </div> <!-- End Core Competencies Category -->
+
+                <!-- Soft Skills Category (Left) -->
+                <div class="skill-category" data-aos="fade-right">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <!-- Inner grid for cards - 3 columns -->
+                     <div class="skill-grid soft-skills-grid">
+                        <!-- Soft skills also don't have progress bars -->
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-lightbulb skill-icon"></i><h4 class="skill-name">Problem Solving</h4></div> </div>
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-chart-line skill-icon"></i><h4 class="skill-name">Analytical Thinking</h4></div> </div>
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-comments skill-icon"></i><h4 class="skill-name">Communication</h4></div> </div>
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-users-cog skill-icon"></i><h4 class="skill-name">Teamwork & Collaboration</h4></div> </div>
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-clock skill-icon"></i><h4 class="skill-name">Time Management</h4></div> </div>
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-book-reader skill-icon"></i><h4 class="skill-name">Continuous Learning</h4></div> </div>
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-puzzle-piece skill-icon"></i><h4 class="skill-name">Adaptability</h4></div> </div>
+                        <div class="skill-card skill-card-soft"> <div class="skill-header"><i class="fas fa-check-double skill-icon"></i><h4 class="skill-name">Attention to Detail</h4></div> </div>
+                     </div>
+                </div> <!-- End Soft Skills Category -->
+
+                 <!-- Add a sixth category placeholder if needed to balance columns, or leave empty -->
+                 <!-- <div class="skill-category" data-aos="fade-left"> ... </div> -->
+
+            </div> <!-- /.skills-container -->
+        </div> <!-- /.container -->
+    </section>
+
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section" data-aos="fade-up">
-        <style>
-            /* Projects Section Styles */
-            .projects-section {
-                padding: 100px 10%;
-            }
+    <section id="projects" class="projects-section">
+         <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Sentinel-Site -->
+               <div class="card project-card" data-aos="fade-up">
+                   <div class="project-image">
+                       <!-- Use data-lightbox-src for optional larger image -->
+                       <img src="assets/sentinelsight.png" data-lightbox-src="assets/sentinelsight.png" alt="Sentinel-Site Cyber Forensics Tool Interface" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="project-content">
+                       <h3 class="project-title">Sentinel-Site (Cyber Forensics Tool)</h3>
+                       <p class="project-description">
+                           Developed a Python-based cyber forensics tool for end-users to detect system compromises, identify potential malware indicators, and facilitate secure recovery processes. Features automated checks and reporting.
+                       </p>
+                       <div class="project-tech">
+                           <span class="tech-tag">Python</span><span class="tech-tag">Forensics</span><span class="tech-tag">Malware</span><span class="tech-tag">OS Internals</span>
+                       </div>
+                   </div>
+                   <!-- No footer/links defined for projects -->
+               </div>
 
-            .projects-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                gap: 30px;
-                margin-top: 50px;
-            }
+               <!-- Project 2: Eco-Inverter -->
+               <div class="card project-card" data-aos="fade-up" data-aos-delay="100">
+                   <div class="project-image">
+                       <img src="assets/ecoinverter.jpg" data-lightbox-src="assets/ecoinverter.jpg" alt="Eco-Inverter Hardware Setup" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="project-content">
+                       <h3 class="project-title">Eco-Inverter (IoT Energy Harvesting)</h3>
+                       <p class="project-description">
+                           Designed and built an IoT-based renewable energy solution generating usable power from refrigerator waste heat using thermoelectric generators. Integrated with Python backend for monitoring and basic home circuit control via web interface.
+                       </p>
+                       <div class="project-tech">
+                           <span class="tech-tag">IoT</span><span class="tech-tag">Python</span><span class="tech-tag">Hardware</span><span class="tech-tag">R-Pi</span><span class="tech-tag">Sensors</span>
+                       </div>
+                   </div>
+               </div>
 
-            .project-card {
-                background: rgba(100, 255, 218, 0.05);
-                border-radius: 15px;
-                overflow: hidden;
-                transition: all 0.3s ease;
-                border: 1px solid rgba(100, 255, 218, 0.1);
-            }
-
-            .project-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
-            }
-
-            .project-image {
-                width: 100%;
-                height: 200px;
-                overflow: hidden;
-                position: relative;
-            }
-
-            .project-image img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.3s ease;
-            }
-
-            .project-card:hover .project-image img {
-                transform: scale(1.1);
-            }
-
-            .project-content {
-                padding: 25px;
-            }
-
-            .project-title {
-                color: var(--text-primary);
-                font-size: 22px;
-                margin-bottom: 15px;
-            }
-
-            .project-description {
-                color: var(--text-secondary);
-                text-align: justify;
-                font-size: 16px;
-                margin-bottom: 20px;
-                line-height: 1.6;
-            }
-
-            .project-tech {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                margin-bottom: 20px;
-            }
-
-            .tech-tag {
-                background: rgba(100, 255, 218, 0.1);
-                color: var(--secondary-color);
-                padding: 5px 12px;
-                border-radius: 15px;
-                font-size: 14px;
-            }
-
-            .project-links {
-                display: flex;
-                gap: 15px;
-            }
-
-            .project-link {
-                color: var(--text-primary);
-                text-decoration: none;
-                font-size: 20px;
-                transition: color 0.3s ease;
-            }
-
-            .project-link:hover {
-                color: var(--secondary-color);
-            }
-        </style>
-
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1: Sentinel-Site -->
-            <div class="project-card" data-aos="fade-up">
-                <div class="project-image">
-                    <img src="assets/sentinelsight.png" alt="Sentinel-Site Project">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Sentinel-Site (Cyber Forensics Tool)</h3>
-                    <p class="project-description">
-                        Advanced cyber forensics tool designed for end users to detect system compromises and identify malware. 
-                        Features automated threat identification and secure recovery processes.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Forensics</span>
-                        <span class="tech-tag">Malware Analysis</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2: Eco-Inverter -->
-            <div class="project-card" data-aos="fade-up">
-                <div class="project-image">
-                    <img src="assets/ecoinverter.jpg" alt="Eco-Inverter Project">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Eco-Inverter (IoT Project)</h3>
-                    <p class="project-description">
-                        Renewable energy solution generating power from refrigerator waste heat. 
-                        IoT-integrated system for home circuit control.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Hardware</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: Password Authenticator -->
-            <div class="project-card" data-aos="fade-up">
-                <div class="project-image">
-                    <img src="assets/passgen.png" alt="Password Authenticator">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Password Authenticator</h3>
-                    <p class="project-description">
-                        Biometric-based password manager eliminating password fatigue for users.
-                        Secure storage and authentication system.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Security</span>
-                        <span class="tech-tag">Biometrics</span>
-                        <span class="tech-tag">Encryption</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+               <!-- Project 3: Password Authenticator -->
+               <div class="card project-card" data-aos="fade-up" data-aos-delay="200">
+                   <div class="project-image">
+                       <img src="assets/passgen.png" data-lightbox-src="assets/passgen.png" alt="Password Authenticator Concept Diagram" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="project-content">
+                       <h3 class="project-title">Biometric Password Manager (Concept)</h3>
+                       <p class="project-description">
+                           Conceptualized and prototyped a biometric-based password management system aiming to reduce password fatigue. Explored secure storage using encryption and authentication mechanisms leveraging fingerprint biometrics.
+                       </p>
+                       <div class="project-tech">
+                           <span class="tech-tag">Security</span><span class="tech-tag">Biometrics</span><span class="tech-tag">Encryption</span><span class="tech-tag">Auth</span><span class="tech-tag">Python</span>
+                       </div>
+                   </div>
+               </div>
             </div>
         </div>
     </section>
-    <!-- Freelance Projects Section -->
-<section id="freelance" class="freelance-section" data-aos="fade-up">
-    <style>
-        /* Freelance Projects Styles */
-        .freelance-section {
-            padding: 100px 10%;
-            background: rgba(10, 25, 47, 0.97);
-        }
 
-        .freelance-categories {
-            margin-top: 50px;
-        }
+    <!-- Freelance Section -->
+    <section id="freelance" class="freelance-section">
+         <div class="container">
+            <h2 class="section-title">Freelance & Personal Projects</h2>
 
-        .category-title {
-            color: var(--secondary-color);
-            font-size: 24px;
-            margin: 40px 0 20px;
-        }
+            <h3 class="subsection-title" data-aos="fade-up"><i class="fas fa-tools"></i> Security Tools</h3>
+            <div class="freelance-grid">
+                <!-- Tool 1: Auto Pentest Tool -->
+               <div class="card freelance-card" data-aos="fade-up">
+                   <div class="freelance-image">
+                       <img src="assets/Autopentest.png" data-lightbox-src="assets/Autopentest.png" alt="Auto Pentest Tool Screenshot/Logo" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="freelance-content">
+                       <h3 class="freelance-title">Auto Pentest Tool</h3>
+                       <p class="freelance-description">
+                           A Python script automating common web application vulnerability scanning tasks (e.g., directory busting, basic XSS/SQLi checks) to assist VAPT analysts during initial reconnaissance phases.
+                       </p>
+                       <div class="project-tech">
+                           <span class="tech-tag">Python</span><span class="tech-tag">Security</span><span class="tech-tag">Automation</span><span class="tech-tag">VAPT</span>
+                       </div>
+                   </div>
+                    <div class="freelance-footer">
+                       <a href="https://github.com/RavindharCYS/Auto_PenTest_Tool" class="view-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                   </div>
+               </div>
 
-        .freelance-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
+                <!-- Tool 2: Web Pentest Automation -->
+               <div class="card freelance-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="freelance-image">
+                       <img src="assets/webpentest.png" data-lightbox-src="assets/webpentest.png" alt="Web Pentest Automation Tool Concept" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="freelance-content">
+                       <h3 class="freelance-title">Web Pentest Automation</h3>
+                       <p class="freelance-description">
+                           Java-based tool exploring automation of web penetration testing workflows. Focused on integrating various scanning techniques and reporting findings (experimental project).
+                       </p>
+                       <div class="project-tech">
+                           <span class="tech-tag">Java</span><span class="tech-tag">Security</span><span class="tech-tag">Automation</span><span class="tech-tag">Web</span>
+                       </div>
+                   </div>
+                    <div class="freelance-footer">
+                       <a href="https://github.com/RavindharCYS/Web_PenTest_Automation" class="view-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                   </div>
+               </div>
 
-        .freelance-card {
-            background: rgba(100, 255, 218, 0.05);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(100, 255, 218, 0.1);
-        }
-
-        .freelance-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
-        }
-
-        .freelance-image {
-            width: 100%;
-            height: 200px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .freelance-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .freelance-card:hover .freelance-image img {
-            transform: scale(1.1);
-        }
-
-        .freelance-content {
-            padding: 25px;
-        }
-
-        .freelance-title {
-            color: var(--text-primary);
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        .freelance-description {
-            color: var(--text-secondary);
-            text-align: justify;
-            font-size: 16px;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .app-stats {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 15px;
-        }
-
-        .stat-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: var(--secondary-color);
-        }
-
-        .view-link {
-            display: inline-block;
-            padding: 8px 20px;
-            border: 1px solid var(--secondary-color);
-            color: var(--secondary-color);
-            border-radius: 5px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .view-link:hover {
-            background: var(--secondary-color);
-            color: var(--primary-color);
-        }
-    </style>
-
-    <h2 class="section-title">Freelance Projects</h2>
-
-    <!-- Security Tools -->
-    <h3 class="category-title">Security Tools</h3>
-    <div class="freelance-grid">
-        <!-- Tool 1 -->
-        <div class="freelance-card" data-aos="fade-up">
-            <div class="freelance-image">
-                <img src="assets/Autopentest.png" alt="Auto Pentest Tool">
+                <!-- Tool 3: Malware Detector -->
+               <div class="card freelance-card" data-aos="fade-up" data-aos-delay="200">
+                   <div class="freelance-image">
+                       <img src="assets/malware.png" data-lightbox-src="assets/malware.png" alt="Malware Detection ML Concept Diagram" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="freelance-content">
+                       <h3 class="freelance-title">Malware Detection Using ML</h3>
+                       <p class="freelance-description">
+                           Exploratory project using Python and machine learning libraries (Scikit-learn) to classify files as potentially malicious based on static analysis features (e.g., PE header info, strings).
+                       </p>
+                       <div class="project-tech">
+                           <span class="tech-tag">Python</span><span class="tech-tag">ML</span><span class="tech-tag">Malware</span><span class="tech-tag">Scikit</span>
+                       </div>
+                   </div>
+                   <div class="freelance-footer">
+                       <a href="https://github.com/RavindharCYS/Malware-Detection-Using-ML" class="view-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                   </div>
+               </div>
             </div>
-            <div class="freelance-content">
-                <h3 class="freelance-title">Auto Pentest Tool</h3>
-                <p class="freelance-description">
-                    Auto Pentest Tool is a Python-based security tool designed to automate vulnerability assessments and penetration testing. It helps VAPT analysts identify web application vulnerabilities efficiently.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Security</span>
-                    <span class="tech-tag">Analysis</span>
-                </div>
-                <a href="https://github.com/RavindharCYS/Auto_PenTest_Tool" class="view-link" target="_blank">View on GitHub</a>
-            </div>
-        </div>
 
-        <!-- Tool 2 -->
-        <div class="freelance-card" data-aos="fade-up">
-            <div class="freelance-image">
-                <img src="assets/webpentest.png" alt="Web Pentest Automation">
-            </div>
-            <div class="freelance-content">
-                <h3 class="freelance-title">Web Pentest Automation</h3>
-                <p class="freelance-description">
-                    Web Pentest Automation is a Python-based security tool designed to streamline web application penetration testing. It automates vulnerability detection and exploits common security flaws.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">Security</span>
-                    <span class="tech-tag">Automation</span>
-                </div>
-                <a href="https://github.com/RavindharCYS/Web_PenTest_Automation" class="view-link" target="_blank">View on GitHub</a>
+            <h3 class="subsection-title" data-aos="fade-up"><i class="fas fa-globe"></i> Websites</h3>
+            <div class="freelance-grid">
+                <!-- Website 1: Ecolyfe -->
+               <div class="card freelance-card" data-aos="fade-up">
+                   <div class="freelance-image">
+                       <img src="assets/Ecolyfe.png" data-lightbox-src="assets/Ecolyfe.png" alt="Ecolyfe Website Screenshot" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="freelance-content">
+                       <h3 class="freelance-title">Ecolyfe (Startup Concept)</h3>
+                       <p class="freelance-description">
+                           Designed and developed a landing page for a conceptual product/service startup focused on web/mobile app development and cybersecurity services. Built with modern frontend technologies.
+                       </p>
+                       <div class="project-tech">
+                           <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span>
+                       </div>
+                   </div>
+                    <div class="freelance-footer">
+                       <a href="https://ecolyfe.site/" class="view-link" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                   </div>
+               </div>
+
+                <!-- Website 2: Success Meets -->
+               <div class="card freelance-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="freelance-image">
+                       <img src="assets/Successmeets.png" data-lightbox-src="assets/Successmeets.png" alt="Success Meets Website Screenshot" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="freelance-content">
+                       <h3 class="freelance-title">Success Meets Educational Consultancy</h3>
+                       <p class="freelance-description">
+                           Developed a website for an educational consultancy, focusing on clear navigation, information architecture for admissions/consulting services, and contact forms. (Note: Link points to dev version).
+                       </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">JS</span>
+                       </div>
+                   </div>
+                    <div class="freelance-footer">
+                       <a href="https://ravindharcys.github.io/Project_in_development/" class="view-link" target="_blank" rel="noopener noreferrer">Visit Dev Site</a>
+                   </div>
+               </div>
+
+                <!-- Website 3: Success Meets Academy -->
+               <div class="card freelance-card" data-aos="fade-up" data-aos-delay="200">
+                   <div class="freelance-image">
+                       <img src="assets/SuccessAcademy.png" data-lightbox-src="assets/SuccessAcademy.png" alt="Success Meets Academy Website Screenshot" loading="lazy" width="600" height="400">
+                   </div>
+                   <div class="freelance-content">
+                       <h3 class="freelance-title">Success Meets Academy</h3>
+                       <p class="freelance-description">
+                            Built a website for an educational academy providing information on courses, faculty, and enrollment procedures. Implemented dynamic elements and backend connectivity.
+                       </p>
+                        <div class="project-tech">
+                           <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span>
+                       </div>
+                   </div>
+                    <div class="freelance-footer">
+                       <a href="http://successmeetsacademy.com/" class="view-link" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                   </div>
+               </div>
             </div>
         </div>
+    </section>
 
-        <!-- Tool 3 -->
-        <div class="freelance-card" data-aos="fade-up">
-            <div class="freelance-image">
-                <img src="assets/malware.png" alt="Malware Detector">
-            </div>
-            <div class="freelance-content">
-                <h3 class="freelance-title">Malware Detection Using ML</h3>
-                <p class="freelance-description">
-                    Malware Detection Using ML is a security tool designed by Ravindhar V to detect malware using machine learning algorithms. It analyzes patterns and behaviors to identify malicious files and activities.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Security</span>
-                    <span class="tech-tag">Testing</span>
-                </div>
-                <a href="https://github.com/RavindharCYS/Malware-Detection-Using-ML" class="view-link" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Websites -->
-    <h3 class="category-title">Website Projects</h3>
-    <div class="freelance-grid">
-        <!-- Website 1 -->
-        <div class="freelance-card" data-aos="fade-up">
-            <div class="freelance-image">
-                <img src="assets/Ecolyfe.png" alt="Website Project 1">
-            </div>
-            <div class="freelance-content">
-                <h3 class="freelance-title">Ecolyfe</h3>
-                <p class="freelance-description">
-                    Eco Lyfe is a product and service-based startup specializing in web and mobile application development, along with comprehensive cybersecurity services. We are dedicated to delivering innovative digital solutions to help businesses thrive securely in the digital age.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">HTML/CSS</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">React</span>
-                </div>
-                <a href="https://ecolyfe.site/" class="view-link" target="_blank">Visit Website</a>
-            </div>
-        </div>
-
-        <!-- Website 2 -->
-        <div class="freelance-card" data-aos="fade-up">
-            <div class="freelance-image">
-                <img src="assets/Successmeets.png" alt="Website Project 2">
-            </div>
-            <div class="freelance-content">
-                <h3 class="freelance-title">Success Meets</h3>
-                <p class="freelance-description">
-                    Success Meet Educational Consultancy's website is designed to provide a seamless user experience with detailed information about admissions, consulting, and contact services. Developed with a modular approach, it ensures easy navigation and efficient updates, catering to the needs of students and parents alike.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">HTML/CSS</span>
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">MySQL</span>
-                </div>
-                <a href="https://ravindharcys.github.io/Project_in_development/" class="view-link" target="_blank">Visit Website</a>
-            </div>
-        </div>
-
-        <!-- Website 3 -->
-<div class="freelance-card" data-aos="fade-up">
-    <div class="freelance-image">
-        <img src="assets/SuccessAcademy.png" alt="Success Meets Academy">
-    </div>
-    <div class="freelance-content">
-        <h3 class="freelance-title">Success Meets Academy</h3>
-        <p class="freelance-description">
-            Success Meets Academy is dedicated to providing comprehensive educational services to students, focusing on personalized learning and academic excellence. The academy offers a range of programs tailored to meet the diverse needs of learners, ensuring a supportive and enriching environment for academic growth.
-        </p>
-        <div class="project-tech">
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">MySQL</span>
-        </div>
-        <a href="http://successmeetsacademy.com/" class="view-link" target="_blank">Visit Website</a>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Mobile Applications -->
-    
-</section>
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section" data-aos="fade-up">
-            <style>
-                /* Contact Section Styles */
-                .contact-section {
-                    padding: 100px 10%;
-                    position: relative;
-                    overflow: hidden;
-                }
-    
-                .contact-container {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 50px;
-                    align-items: center;
-                }
-    
-                .contact-info {
-                    padding-right: 50px;
-                }
-    
-                .contact-heading {
-                    color: var(--secondary-color);
-                    font-size: 18px;
-                    margin-bottom: 20px;
-                }
-    
-                .contact-title {
-                    font-size: 40px;
-                    color: var(--text-primary);
-                    margin-bottom: 20px;
-                }
-    
-                .contact-description {
-                    color: var(--text-secondary);
-                    font-size: 18px;
-                    margin-bottom: 30px;
-                    line-height: 1.6;
-                }
-    
-                .contact-details {
-                    display: grid;
-                    gap: 20px;
-                }
-    
-                .contact-item {
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
-                }
-    
-                .contact-icon {
-                    width: 40px;
-                    height: 40px;
-                    background: rgba(100, 255, 218, 0.1);
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: var(--secondary-color);
-                    font-size: 20px;
-                }
-    
-                .contact-text {
-                    color: var(--text-primary);
-                }
-    
-                .contact-form {
-                    background: rgba(100, 255, 218, 0.05);
-                    padding: 40px;
-                    border-radius: 15px;
-                    border: 1px solid rgba(100, 255, 218, 0.1);
-                }
-    
-                .form-group {
-                    margin-bottom: 20px;
-                }
-    
-                .form-label {
-                    display: block;
-                    color: var(--text-primary);
-                    margin-bottom: 10px;
-                }
-    
-                .form-input,
-                .form-textarea {
-                    width: 100%;
-                    padding: 12px;
-                    background: rgba(100, 255, 218, 0.05);
-                    border: 1px solid rgba(100, 255, 218, 0.1);
-                    border-radius: 5px;
-                    color: var(--text-primary);
-                    font-size: 16px;
-                }
-    
-                .form-textarea {
-                    height: 150px;
-                    resize: vertical;
-                }
-    
-                .submit-btn {
-                    background: var(--secondary-color);
-                    color: var(--primary-color);
-                    padding: 12px 30px;
-                    border: none;
-                    border-radius: 5px;
-                    font-size: 16px;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                }
-    
-                .submit-btn:hover {
-                    transform: translateY(-3px);
-                    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
-                }
-    
-                /* Footer Styles */
-                .footer {
-                    padding: 50px 10%;
-                    background: rgba(10, 25, 47, 0.97);
-                    text-align: center;
-                }
-    
-                .footer-content {
-                    max-width: 600px;
-                    margin: 0 auto;
-                }
-    
-                .footer-logo {
-                    color: var(--secondary-color);
-                    font-size: 24px;
-                    margin-bottom: 20px;
-                }
-    
-                .footer-social {
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                    margin-bottom: 30px;
-                }
-    
-                .footer-social a {
-                    color: var(--text-primary);
-                    font-size: 20px;
-                    transition: all 0.3s ease;
-                }
-    
-                .footer-social a:hover {
-                    color: var(--secondary-color);
-                    transform: translateY(-3px);
-                }
-    
-                .footer-text {
-                    color: var(--text-secondary);
-                    font-size: 14px;
-                }
-    
-                .footer-links {
-                    margin-top: 20px;
-                }
-    
-                .footer-links a {
-                    color: var(--text-primary);
-                    margin: 0 15px;
-                    text-decoration: none;
-                    transition: color 0.3s ease;
-                }
-    
-                .footer-links a:hover {
-                    color: var(--secondary-color);
-                }
-    
-                /* Responsive Styles */
-                @media (max-width: 768px) {
-                    .contact-container {
-                        grid-template-columns: 1fr;
-                    }
-    
-                    .contact-info {
-                        padding-right: 0;
-                    }
-    
-                    .hero {
-                        grid-template-columns: 1fr;
-                        text-align: center;
-                    }
-    
-                    .skills-container {
-                        grid-template-columns: 1fr;
-                    }
-    
-                    .about-content {
-                        grid-template-columns: 1fr;
-                    }
-    
-                    .nav-links {
-                        display: none;
-                    }
-                }
-            </style>
-    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                     <p class="contact-heading">Let's Connect</p>
-                    <h2 class="contact-title">Have a project in mind?</h2>
+                    <h3 class="contact-title">Have a project or question?</h3>
                     <p class="contact-description">
-                        I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                        I'm actively seeking opportunities and collaborations in cybersecurity. Whether you have a specific project, a question, or just want to connect, feel free to reach out!
                     </p>
-                    
                     <div class="contact-details">
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">ravindhar.upm@gmail.com</div>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text"><a href="mailto:ravindhar.upm@gmail.com">ravindhar.upm@gmail.com</a></div>
                         </div>
-                        
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">Salem, Tamil Nadu, India</div>
+                             <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                             <div class="contact-text"><a href="https://linkedin.com/in/ravindhar-cy" target="_blank" rel="noopener noreferrer">linkedin.com/in/ravindhar-cy</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">Salem, Tamil Nadu, India <br><span class="text-muted" style="font-size: 0.85em;">(Open to remote work)</span></div>
                         </div>
                     </div>
                 </div>
-    
-                <form class="contact-form" data-aos="fade-left" id="contactForm">
+
+                <form class="contact-form" data-aos="fade-left" data-aos-delay="100" id="contactForm" novalidate>
                     <div class="form-group">
-                        <label class="form-label">Name</label>
-                        <input type="text" class="form-input" name="user_name" id="user_name" required>
+                        <label for="user_name" class="form-label">Your Name</label>
+                        <input type="text" class="form-input" name="user_name" id="user_name" required placeholder="Enter your full name" autocomplete="name" aria-required="true">
+                        <!-- JS will insert .error-message here if needed -->
                     </div>
-                    
                     <div class="form-group">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-input" name="user_email" id="user_email" required>
+                        <label for="user_email" class="form-label">Your Email</label>
+                        <input type="email" class="form-input" name="user_email" id="user_email" required placeholder="Enter your email address" autocomplete="email" aria-required="true">
+                         <!-- JS will insert .error-message here if needed -->
                     </div>
-                    
                     <div class="form-group">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-textarea" name="message" id="message" required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-textarea" name="message" id="message" required placeholder="How can I help you?" rows="5" aria-required="true"></textarea>
+                         <!-- JS will insert .error-message here if needed -->
                     </div>
-                    
-                    <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn" id="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
                 </form>
             </div>
-        </section>
-    
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-logo">Ravindhar V</div>
-                
-                <div class="footer-social">
-                    <a href="https://linkedin.com/in/ravindhar-cy" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/RavindharCYS" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:ravindhar.upm@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-                
-                <p class="footer-text">
-                    Designed & Built by Ravindhar V
-                </p>
-                
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+             <a href="#home" class="footer-logo" aria-label="Back to top">Ravindhar V</a>
+             <div class="footer-social">
+                 <a href="https://linkedin.com/in/ravindhar-cy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                 <a href="https://github.com/RavindharCYS" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub"><i class="fab fa-github"></i></a>
+                 <a href="mailto:ravindhar.upm@gmail.com" aria-label="Send Email" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
-        </footer>
-    
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+             <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                 <a href="#freelance">Freelance</a>
+                <a href="#contact">Contact</a>
+            </div>
+             <p class="footer-text">
+                Designed & Built by Ravindhar V © <span id="copyright-year"></span>. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-<script>
-    if (window.location.pathname.endsWith("index.html")) {
-      window.location.replace("/");
-    }
-  </script>
+    <!-- Notification Area (Populated by JS) -->
+    <div class="notification-container" aria-live="polite" aria-atomic="true"></div>
 
-<!-- Main Script Module -->
-<script>
-// ===============================
-// Configuration Objects
-// ===============================
-const config = {
-    resume: {
-        filePath: 'assets/resume/Ravindhar_V_Resume.pdf',
-        fileName: 'Ravindhar_V_Resume.pdf'
-    },
-    emailjs: {
-        publicKey: 'Ny9Ko_FtQ9HSmaIv0', // Replace with your EmailJS public key
-        serviceId: 'service_s2rjpbq', // Replace with your EmailJS service ID
-        templateId: 'template_o2s64pl' // Replace with your EmailJS template ID
-    },
-    animation: {
-        duration: 1000,
-        once: true,
-        offset: 100
-    }
-};
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Scroll to top" title="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-// ===============================
-// Resume Download Module
-// ===============================
-const ResumeModule = {
-    async handleDownload(button) {
-        this.setLoadingState(button, true);
-        try {
-            await this.downloadFile();
-            this.trackDownload();
-        } catch (error) {
-            this.handleError(error);
-        } finally {
-            this.setLoadingState(button, false);
-        }
-    },
+    <!-- Lightbox Area Placeholder (Structure generated by JS) -->
 
-    setLoadingState(button, isLoading) {
-        button.classList.toggle('loading', isLoading);
-        button.textContent = isLoading ? 'Downloading...' : 'Download CV';
-    },
+    <!-- Scripts -->
+    <!-- Order: Libraries first, then custom script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Ensure you use the correct EmailJS SDK version -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script> <!-- Your main script last -->
 
-    async downloadFile() {
-        const response = await fetch(config.resume.filePath);
-        if (!response.ok) throw new Error('Failed to fetch resume');
-
-        const blob = await response.blob();
-        if (blob.type !== 'application/pdf') throw new Error('Invalid file format');
-
-        const downloadUrl = window.URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = downloadUrl;
-        link.download = config.resume.fileName;
-
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        window.URL.revokeObjectURL(downloadUrl);
-    },
-
-    handleError(error) {
-        console.error('Download error:', error);
-        alert('Sorry, there was a problem downloading the resume. Please try again later.');
-    },
-
-    trackDownload() {
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'download', {
-                'event_category': 'Resume',
-                'event_label': 'CV Download'
-            });
-        }
-    }
-};
-
-// ===============================
-// Contact Form Module
-// ===============================
-const ContactModule = {
-    init() {
-        emailjs.init(config.emailjs.publicKey);
-        this.bindEvents();
-    },
-
-    bindEvents() {
-        const form = document.getElementById('contactForm');
-        if (form) {
-            form.addEventListener('submit', (e) => this.handleSubmit(e));
-        }
-    },
-
-    async handleSubmit(e) {
-        e.preventDefault();
-        const form = e.target;
-        const submitBtn = form.querySelector('button[type="submit"]');
-
-        this.setLoadingState(submitBtn, true);
-
-        try {
-            const templateParams = {
-                from_name: form.querySelector('input[name="user_name"]').value,
-                from_email: form.querySelector('input[name="user_email"]').value,
-                message: form.querySelector('textarea[name="message"]').value
-            };
-
-            await this.sendEmail(templateParams);
-            this.handleSuccess(form);
-        } catch (error) {
-            this.handleError(error);
-        } finally {
-            this.setLoadingState(submitBtn, false);
-        }
-    },
-
-    setLoadingState(button, isLoading) {
-        button.disabled = isLoading;
-        button.textContent = isLoading ? 'Sending...' : 'Send Message';
-    },
-
-    async sendEmail(templateParams) {
-        return emailjs.send(
-            config.emailjs.serviceId,
-            config.emailjs.templateId,
-            templateParams
-        );
-    },
-
-    handleSuccess(form) {
-        alert('Thank you for your message! I will get back to you soon.');
-        form.reset();
-    },
-
-    handleError(error) {
-        console.error('Email send failed:', error);
-        alert('Sorry, there was an error sending your message. Please try again later.');
-    }
-};
-
-// ===============================
-// Navigation Module
-// ===============================
-const NavigationModule = {
-    init() {
-        this.bindScrollEvents();
-        this.bindSmoothScroll();
-    },
-
-    bindScrollEvents() {
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('.nav-container');
-            if (nav) {
-                nav.style.background = window.scrollY > 100 
-                    ? 'rgba(10, 25, 47, 0.95)' 
-                    : 'transparent';
-            }
-        });
-    },
-
-    bindSmoothScroll() {
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', (e) => {
-                e.preventDefault();
-                const element = document.querySelector(anchor.getAttribute('href'));
-                if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    }
-};
-
-// ===============================
-// Animation Module
-// ===============================
-const AnimationModule = {
-    init() {
-        AOS.init(config.animation);
-    }
-};
-
-// ===============================
-// Initialize All Modules
-// ===============================
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize all modules
-    ContactModule.init();
-    NavigationModule.init();
-    AnimationModule.init();
-
-    // Bind resume download button
-    const downloadBtn = document.querySelector('.download-btn');
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            ResumeModule.handleDownload(downloadBtn);
-        });
-    }
-});
-
-// ===============================
-// Export modules if needed
-// ===============================
-window.Portfolio = {
-    ResumeModule,
-    ContactModule,
-    NavigationModule,
-    AnimationModule
-};
-</script>
-    </body>
-    </html>
+</body>
+</html>
