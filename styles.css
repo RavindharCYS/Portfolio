@@ -1,29 +1,3 @@
-/*
-================================
-TABLE OF CONTENTS
-================================
-1.  CSS Reset & Global Variables
-2.  Base & Global Styles
-3.  Typography System
-4.  Layout & Container
-5.  Navigation Bar & Theme Toggle
-6.  Hero Section
-7.  About Section & Education
-8.  Experience Section (Timeline)
-9.  Skills Section (Left/Right Categories, 3-Card Inner Grid) // <<< UPDATED LAYOUT
-10. Card System (Base & Variants - For Projects/Certs etc.)
-11. Project & Freelance Specific Card Styles
-12. Certification Specific Card Styles
-13. Contact Section
-14. Footer
-15. Components (Particles, Buttons, Forms, Notifications, Lightbox, Scroll Progress, Back To Top)
-16. Utility Classes
-17. Animations & Transitions
-18. Dark Mode Styles (.dark-mode class)
-19. Media Queries (Responsiveness)
-================================
-*/
-
 /* ===== 1. CSS Reset & Global Variables ===== */
 :root {
 	/* Color Palette - Base (Light Mode Default) */
@@ -108,6 +82,11 @@ a { color: var(--color-accent-primary); text-decoration: none; transition: color
 a:hover { color: var(--color-accent-primary-hover); }
 :focus-visible { outline: 3px solid rgba(var(--color-accent-primary-rgb), 0.5); outline-offset: 2px; border-radius: var(--radius-sm); }
 :focus:not(:focus-visible) { outline: none; }
+
+/* In your CSS file */
+.justified-text {
+    text-align: justify;
+}
 
 /* ===== 2. Base & Global Styles ===== */
 body.menu-open { overflow: hidden; }
