@@ -182,6 +182,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- 5. Sticky Navigation & Scroll Effects ---
+    function initScrollEffects() {
+        let lastScrollTop = 0;
+        const navHeight = mainNav.offsetHeight;
+        // *** MODIFY THIS LINE ***
+        const sections = Array.from(document.querySelectorAll('section[id]')); // Query ALL sections with an ID
+
+        // Throttle the scroll handler for performance
+        const throttledScrollHandler = throttle(handleScroll, 100);
+        window.addEventListener('scroll', throttledScrollHandler);
+        // Initial check in case the page loads scrolled down
+        handleScroll();
+
+        function handleScroll() {
+            // ... rest of handleScroll function ...
+            // (No changes needed inside handleScroll itself if the querySelectorAll is correct)
+        }
+
+        function activateNavLink(scrollTop) {
+            // ... existing activateNavLink function ...
+            // (This should work correctly now with the updated 'sections' array)
+        }
+
+        // Back to Top Click Listener
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
 
         // --- 6. Particles.js Initialization ---
         function initParticles() {
