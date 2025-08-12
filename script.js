@@ -182,6 +182,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Function to calculate duration in months
+function calculateDuration() {
+    const durationElements = document.querySelectorAll('.duration-months');
+    
+    durationElements.forEach(element => {
+        const startDate = new Date(element.getAttribute('data-start-date'));
+        const currentDate = new Date();
+        
+        // Calculate the difference in months
+        let months = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
+        months += currentDate.getMonth() - startDate.getMonth();
+        
+        // Add 1 to include the current month
+        months += 1;
+        
+        // Handle the singular/plural form
+        const monthText = months === 1 ? 'month' : 'months';
+        
+        // Update the element with the calculated duration
+        element.textContent = `(${months} ${monthText})`;
+    });
+}
+
+// Call the function when the DOM is loaded
+document.addEventListener('DOMContentLoaded', calculateDuration);
+
+// Optional: Update the duration every month automatically
+setInterval(calculateDuration, 1000 * 60 * 60 * 24); // Update daily
+
     // --- 5. Sticky Navigation & Scroll Effects ---
     function initScrollEffects() {
         let lastScrollTop = 0;
